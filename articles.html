@@ -1,0 +1,1636 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>المقالات الطبية والتثقيفية | عيادة أ.د. أحمد المحروقي</title>
+  <meta name="description" content="مكتبة المقالات الطبية والتثقيفية للأستاذ الدكتور أحمد المحروقي حول القدم السكري، جراحة الأوعية الدموية، القسطرة الطرفية، ودوالي الساقين." />
+  
+  <!-- Google Fonts: Cairo for Arabic & Inter for English -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: {
+              DEFAULT: '#0f3d5e',
+              light: '#1a5c8a',
+              dark: '#09273d',
+            },
+            accent: {
+              DEFAULT: '#0d9488',
+              hover: '#0f766e',
+            }
+          },
+          fontFamily: {
+            arabic: ['Cairo', 'sans-serif'],
+            english: ['Inter', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    html[lang="ar"] body { font-family: 'Cairo', sans-serif; }
+    html[lang="en"] body { font-family: 'Inter', sans-serif; }
+
+    [data-lang="en"] { display: none; }
+    html[lang="en"] [data-lang="ar"] { display: none; }
+    html[lang="en"] [data-lang="en"] { display: block; }
+    html[lang="en"] span[data-lang="en"],
+    html[lang="en"] a[data-lang="en"] { display: inline-flex; }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-teal-600 selection:text-white">
+
+  <!-- Top Quick Contact Bar -->
+  <div class="bg-primary-dark text-slate-200 text-xs sm:text-sm py-2 px-4">
+    <div class="max-w-6xl mx-auto flex flex-wrap justify-between items-center gap-2">
+      <div class="flex items-center gap-4">
+        <a href="tel:+201010610504" class="hover:text-white transition flex items-center gap-1.5" dir="ltr">
+          <svg class="w-4 h-4 text-teal-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+          <span>01010610504</span>
+        </a>
+        <span class="text-slate-500">|</span>
+        <span class="hidden sm:inline">
+          <span data-lang="ar">٤٥ شارع الدقي – الجيزة</span>
+          <span data-lang="en">45 Dokki Street – Giza</span>
+        </span>
+      </div>
+      <div class="flex items-center gap-3">
+        <a href="https://www.youtube.com/@ahmed_mahrouky" target="_blank" rel="noopener noreferrer" class="hover:text-red-400 transition flex items-center gap-1.5 font-medium">
+          <svg class="w-4 h-4 text-red-500" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+          <span data-lang="ar">قناة اليوتيوب</span>
+          <span data-lang="en">YouTube Channel</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sticky Navigation Bar -->
+  <header class="bg-white/95 backdrop-blur border-b border-slate-200 sticky top-0 z-40">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-3.5 flex justify-between items-center gap-2">
+      <a href="index.html" class="flex items-center gap-3 group">
+        <div class="w-10 h-10 rounded-xl bg-primary text-white flex items-center justify-center font-bold text-lg shadow-sm group-hover:bg-primary-light transition shrink-0">
+          AM
+        </div>
+        <div>
+          <div class="font-bold text-base sm:text-lg text-primary leading-tight">
+            <span data-lang="ar">عيادة أ.د. أحمد المحروقي</span>
+            <span data-lang="en">Prof. Dr. Ahmed Mahrouky</span>
+          </div>
+          <div class="text-xs text-slate-500 font-medium hidden sm:block">
+            <span data-lang="ar">جراحة الأوعية الدموية والقدم السكري</span>
+            <span data-lang="en">Vascular & Diabetic Foot Surgery</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Desktop Menu -->
+      <nav class="hidden md:flex items-center gap-3 text-sm font-semibold">
+        <a href="index.html" class="px-3.5 py-2 rounded-xl text-slate-700 hover:text-primary hover:bg-slate-100 transition">
+          <span data-lang="ar">الرئيسية</span>
+          <span data-lang="en">Home</span>
+        </a>
+        <a href="articles.html" class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-accent text-white font-bold shadow-sm">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+          <span data-lang="ar">المقالات الطبية</span>
+          <span data-lang="en">Medical Articles</span>
+        </a>
+        <button id="langToggle" type="button" class="px-3.5 py-2 rounded-xl border border-slate-300 bg-slate-50 hover:bg-slate-100 text-primary font-bold transition cursor-pointer">
+          English
+        </button>
+      </nav>
+
+      <!-- Mobile Controls -->
+      <div class="flex items-center gap-1.5 md:hidden">
+        <a href="index.html" class="px-2.5 py-1.5 rounded-lg text-primary text-xs font-bold hover:bg-slate-100">
+          <span data-lang="ar">الرئيسية</span>
+          <span data-lang="en">Home</span>
+        </a>
+        <a href="articles.html" class="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg bg-accent text-white text-xs font-bold shadow-sm">
+          <span data-lang="ar">المقالات</span>
+          <span data-lang="en">Articles</span>
+        </a>
+        <button id="langToggleMobile" type="button" class="px-2.5 py-1.5 rounded-lg border border-slate-300 bg-slate-50 text-primary text-xs font-bold">
+          English
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Header Banner -->
+  <section id="top" class="bg-gradient-to-br from-primary-dark via-primary to-primary-light text-white py-12 sm:py-16">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 space-y-4">
+      <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white/10 border border-white/20 text-xs sm:text-sm font-medium text-teal-200">
+        <span data-lang="ar">مدونة ومكتبة التوعية الطبية</span>
+        <span data-lang="en">Medical Blog & Patient Library</span>
+      </div>
+      <h1 class="text-2xl sm:text-4xl font-extrabold leading-snug">
+        <span data-lang="ar">المقالات الطبية للأستاذ الدكتور أحمد المحروقي</span>
+        <span data-lang="en">Medical Articles by Prof. Dr. Ahmed Mahrouky</span>
+      </h1>
+      <p class="text-slate-200 text-sm sm:text-base max-w-2xl" data-lang="ar">
+        اختر عنوان المقال من الفهرس أدناه للانتقال مباشرة إلى نص المقال الكامل في نفس الصفحة.
+      </p>
+      <p class="text-slate-200 text-sm sm:text-base max-w-2xl" data-lang="en">
+        Select any article title from the index below to jump directly to its full text on this page.
+      </p>
+    </div>
+  </section>
+
+  <!-- Main Content Container -->
+  <main class="max-w-4xl mx-auto px-4 sm:px-6 py-10 sm:py-14 space-y-12">
+
+    <!-- Top Table of Contents / Articles Directory -->
+    <section aria-labelledby="articles-index-heading" class="bg-white rounded-3xl border-2 border-primary/15 shadow-sm p-6 sm:p-8 space-y-6">
+      <div class="flex items-center justify-between border-b border-slate-200 pb-4">
+        <h2 id="articles-index-heading" class="text-xl sm:text-2xl font-bold text-primary flex items-center gap-2.5">
+          <svg class="w-6 h-6 text-accent shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7"/></svg>
+          <span data-lang="ar">فهرس المقالات الطبية</span>
+          <span data-lang="en">Articles Index</span>
+        </h2>
+        <span class="text-xs font-bold px-3 py-1 rounded-full bg-slate-100 text-slate-600">
+          <span data-lang="ar">١٣ مقالاً طبياً • انتقال مباشر</span>
+          <span data-lang="en">13 Articles • Quick Jump</span>
+        </span>
+      </div>
+
+      <!-- Clickable Article Links List (Scrolling to Anchors Below) -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
+        <a href="#article-1" class="group flex items-center justify-between p-4 rounded-2xl bg-slate-50 hover:bg-primary hover:text-white border border-slate-200 hover:border-primary transition">
+          <div class="flex items-center gap-3">
+            <span class="w-8 h-8 rounded-lg bg-primary text-white group-hover:bg-white group-hover:text-primary font-bold text-sm flex items-center justify-center shrink-0 transition">١</span>
+            <span class="font-bold text-sm sm:text-base">
+              <span data-lang="ar">جراحة زرع شريان بالقدم: الحل الجذري للغرغرينا بدون بتر</span>
+              <span data-lang="en">Lower-Extremity Arterial Bypass: Definitive Gangrene Salvage</span>
+            </span>
+          </div>
+          <span class="text-accent group-hover:text-teal-200 font-bold text-sm shrink-0">↓</span>
+        </a>
+
+        <a href="#article-2" class="group flex items-center justify-between p-4 rounded-2xl bg-slate-50 hover:bg-primary hover:text-white border border-slate-200 hover:border-primary transition">
+          <div class="flex items-center gap-3">
+            <span class="w-8 h-8 rounded-lg bg-primary text-white group-hover:bg-white group-hover:text-primary font-bold text-sm flex items-center justify-center shrink-0 transition">٢</span>
+            <span class="font-bold text-sm sm:text-base">
+              <span data-lang="ar">طريقة الغيار على جروح القدم السكري خطوة بخطوة</span>
+              <span data-lang="en">Step-by-Step Guide to Diabetic Foot Wound Dressing</span>
+            </span>
+          </div>
+          <span class="text-accent group-hover:text-teal-200 font-bold text-sm shrink-0">↓</span>
+        </a>
+
+        <a href="#article-3" class="group flex items-center justify-between p-4 rounded-2xl bg-slate-50 hover:bg-primary hover:text-white border border-slate-200 hover:border-primary transition">
+          <div class="flex items-center gap-3">
+            <span class="w-8 h-8 rounded-lg bg-primary text-white group-hover:bg-white group-hover:text-primary font-bold text-sm flex items-center justify-center shrink-0 transition">٣</span>
+            <span class="font-bold text-sm sm:text-base">
+              <span data-lang="ar">وسائل علاج قرحة القدم السكري (أسئلة وأجوبة شاملة)</span>
+              <span data-lang="en">Diabetic Foot Ulcer Treatment Options (FAQ Guide)</span>
+            </span>
+          </div>
+          <span class="text-accent group-hover:text-teal-200 font-bold text-sm shrink-0">↓</span>
+        </a>
+
+        <a href="#article-4" class="group flex items-center justify-between p-4 rounded-2xl bg-slate-50 hover:bg-primary hover:text-white border border-slate-200 hover:border-primary transition">
+          <div class="flex items-center gap-3">
+            <span class="w-8 h-8 rounded-lg bg-primary text-white group-hover:bg-white group-hover:text-primary font-bold text-sm flex items-center justify-center shrink-0 transition">٤</span>
+            <span class="font-bold text-sm sm:text-base">
+              <span data-lang="ar">لماذا يُعد أ.د. أحمد المحروقي من أفضل أطباء القدم السكري في مصر؟</span>
+              <span data-lang="en">Why Prof. Dr. Ahmed Mahrouky Leads Diabetic Foot Care in Egypt</span>
+            </span>
+          </div>
+          <span class="text-accent group-hover:text-teal-200 font-bold text-sm shrink-0">↓</span>
+        </a>
+
+        <a href="#article-5" class="group flex items-center justify-between p-4 rounded-2xl bg-slate-50 hover:bg-primary hover:text-white border border-slate-200 hover:border-primary transition">
+          <div class="flex items-center gap-3">
+            <span class="w-8 h-8 rounded-lg bg-primary text-white group-hover:bg-white group-hover:text-primary font-bold text-sm flex items-center justify-center shrink-0 transition">٥</span>
+            <span class="font-bold text-sm sm:text-base">
+              <span data-lang="ar">طرق الحماية اليومية من مضاعفات القدم السكري</span>
+              <span data-lang="en">Daily Protection & Preventive Care for the Diabetic Foot</span>
+            </span>
+          </div>
+          <span class="text-accent group-hover:text-teal-200 font-bold text-sm shrink-0">↓</span>
+        </a>
+
+        <a href="#article-6" class="group flex items-center justify-between p-4 rounded-2xl bg-slate-50 hover:bg-primary hover:text-white border border-slate-200 hover:border-primary transition">
+          <div class="flex items-center gap-3">
+            <span class="w-8 h-8 rounded-lg bg-primary text-white group-hover:bg-white group-hover:text-primary font-bold text-sm flex items-center justify-center shrink-0 transition">٦</span>
+            <span class="font-bold text-sm sm:text-base">
+              <span data-lang="ar">طرق غلق جروح القدم السكري: الرقعة الجلدية والسديلة الموضعية</span>
+              <span data-lang="en">Diabetic Foot Wound Closure: Skin Grafts & Local Flaps</span>
+            </span>
+          </div>
+          <span class="text-accent group-hover:text-teal-200 font-bold text-sm shrink-0">↓</span>
+        </a>
+
+        <a href="#article-7" class="group flex items-center justify-between p-4 rounded-2xl bg-slate-50 hover:bg-primary hover:text-white border border-slate-200 hover:border-primary transition">
+          <div class="flex items-center gap-3">
+            <span class="w-8 h-8 rounded-lg bg-primary text-white group-hover:bg-white group-hover:text-primary font-bold text-sm flex items-center justify-center shrink-0 transition">٧</span>
+            <span class="font-bold text-sm sm:text-base">
+              <span data-lang="ar">عملية البتر في القدم السكري: متى تكون ضرورية وكيف يعود المريض لحياته؟</span>
+              <span data-lang="en">Amputation in Diabetic Foot: When Is It Life-Saving & Prosthetic Rehab</span>
+            </span>
+          </div>
+          <span class="text-accent group-hover:text-teal-200 font-bold text-sm shrink-0">↓</span>
+        </a>
+
+        <a href="#article-8" class="group flex items-center justify-between p-4 rounded-2xl bg-slate-50 hover:bg-primary hover:text-white border border-slate-200 hover:border-primary transition">
+          <div class="flex items-center gap-3">
+            <span class="w-8 h-8 rounded-lg bg-primary text-white group-hover:bg-white group-hover:text-primary font-bold text-sm flex items-center justify-center shrink-0 transition">٨</span>
+            <span class="font-bold text-sm sm:text-base">
+              <span data-lang="ar">حذاء القدم السكري وكيفية اختياره بطريقة صحيحة</span>
+              <span data-lang="en">Diabetic Foot Shoes: How to Choose the Right Pair Safely</span>
+            </span>
+          </div>
+          <span class="text-accent group-hover:text-teal-200 font-bold text-sm shrink-0">↓</span>
+        </a>
+
+        <a href="#article-9" class="group flex items-center justify-between p-4 rounded-2xl bg-slate-50 hover:bg-primary hover:text-white border border-slate-200 hover:border-primary transition">
+          <div class="flex items-center gap-3">
+            <span class="w-8 h-8 rounded-lg bg-primary text-white group-hover:bg-white group-hover:text-primary font-bold text-sm flex items-center justify-center shrink-0 transition">٩</span>
+            <span class="font-bold text-sm sm:text-base">
+              <span data-lang="ar">مكافحة العدوى في علاج القدم السكري: الالتهاب الخلوي والخراجات العميقة وتسوس العظام</span>
+              <span data-lang="en">Infection Control in Diabetic Foot: Cellulitis, Deep Abscesses & Osteomyelitis</span>
+            </span>
+          </div>
+          <span class="text-accent group-hover:text-teal-200 font-bold text-sm shrink-0">↓</span>
+        </a>
+
+        <a href="#article-10" class="group flex items-center justify-between p-4 rounded-2xl bg-slate-50 hover:bg-primary hover:text-white border border-slate-200 hover:border-primary transition">
+          <div class="flex items-center gap-3">
+            <span class="w-8 h-8 rounded-lg bg-primary text-white group-hover:bg-white group-hover:text-primary font-bold text-sm flex items-center justify-center shrink-0 transition">١٠</span>
+            <span class="font-bold text-sm sm:text-base">
+              <span data-lang="ar">علاج القدم السكري بتسليك الشرايين بالقسطرة التداخلية</span>
+              <span data-lang="en">Diabetic Foot Treatment via Peripheral Catheter Angioplasty</span>
+            </span>
+          </div>
+          <span class="text-accent group-hover:text-teal-200 font-bold text-sm shrink-0">↓</span>
+        </a>
+
+        <a href="#article-11" class="group flex items-center justify-between p-4 rounded-2xl bg-slate-50 hover:bg-primary hover:text-white border border-slate-200 hover:border-primary transition">
+          <div class="flex items-center gap-3">
+            <span class="w-8 h-8 rounded-lg bg-primary text-white group-hover:bg-white group-hover:text-primary font-bold text-sm flex items-center justify-center shrink-0 transition">١١</span>
+            <span class="font-bold text-sm sm:text-base">
+              <span data-lang="ar">هل علاج الغرغرينا بالقدم أو الأصابع بدون بتر وبدون جراحة ممكن؟</span>
+              <span data-lang="en">Is Treating Foot or Toe Gangrene Without Amputation or Surgery Possible?</span>
+            </span>
+          </div>
+          <span class="text-accent group-hover:text-teal-200 font-bold text-sm shrink-0">↓</span>
+        </a>
+
+        <a href="#article-12" class="group flex items-center justify-between p-4 rounded-2xl bg-slate-50 hover:bg-primary hover:text-white border border-slate-200 hover:border-primary transition">
+          <div class="flex items-center gap-3">
+            <span class="w-8 h-8 rounded-lg bg-primary text-white group-hover:bg-white group-hover:text-primary font-bold text-sm flex items-center justify-center shrink-0 transition">١٢</span>
+            <span class="font-bold text-sm sm:text-base">
+              <span data-lang="ar">كيف تختار أفضل دكتور قدم سكري في مصر؟ دليل المريض لتقييم الكفاءة</span>
+              <span data-lang="en">How to Choose the Right Diabetic Foot Specialist in Egypt</span>
+            </span>
+          </div>
+          <span class="text-accent group-hover:text-teal-200 font-bold text-sm shrink-0">↓</span>
+        </a>
+
+        <a href="#article-13" class="group flex items-center justify-between p-4 rounded-2xl bg-slate-50 hover:bg-primary hover:text-white border border-slate-200 hover:border-primary transition sm:col-span-2">
+          <div class="flex items-center gap-3">
+            <span class="w-8 h-8 rounded-lg bg-primary text-white group-hover:bg-white group-hover:text-primary font-bold text-sm flex items-center justify-center shrink-0 transition">١٣</span>
+            <span class="font-bold text-sm sm:text-base">
+              <span data-lang="ar">علاج قرح القدم السكري بالعسل الطبي: الفوائد العلمية والضوابط الطبية</span>
+              <span data-lang="en">Medical-Grade Honey in Diabetic Foot Ulcers: Scientific Mechanisms & Clinical Limits</span>
+            </span>
+          </div>
+          <span class="text-accent group-hover:text-teal-200 font-bold text-sm shrink-0">↓</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- Articles Sections (Target Anchors on Same Page) -->
+    <div class="space-y-8">
+      
+      <!-- Article 1: Lower-Extremity Arterial Bypass -->
+      <article id="article-1" class="scroll-mt-24 bg-white rounded-3xl border border-slate-200 shadow-sm p-6 sm:p-10 space-y-6">
+        <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-100 pb-4">
+          <div class="flex flex-wrap items-center gap-2 text-xs font-bold">
+            <span class="px-3 py-1 rounded-full bg-teal-50 text-accent">
+              <span data-lang="ar">مقال رقم ١</span>
+              <span data-lang="en">Article #1</span>
+            </span>
+            <span class="text-slate-500">
+              <span data-lang="ar">أ.د. أحمد المحروقي • ٢٢ سبتمبر ٢٠٢٢ • ٥ دقائق قراءة</span>
+              <span data-lang="en">Prof. Dr. Ahmed Mahrouky • Sep 22, 2022 • 5 min read</span>
+            </span>
+          </div>
+          <a href="#top" class="text-xs font-bold text-slate-500 hover:text-primary transition">
+            <span data-lang="ar">↑ العودة للفهرس</span>
+            <span data-lang="en">↑ Back to Index</span>
+          </a>
+        </div>
+
+        <!-- Arabic Content -->
+        <div data-lang="ar" class="space-y-8 text-slate-700 text-base sm:text-lg leading-relaxed">
+          <h3 class="text-2xl sm:text-3xl font-extrabold text-primary leading-snug">
+            جراحة زرع شريان بالقدم: الحل الجذري للغرغرينا بدون بتر
+          </h3>
+
+          <!-- Core Questions 1 - 5 -->
+          <div class="space-y-6">
+            <div class="space-y-2">
+              <h4 class="text-lg sm:text-xl font-bold text-primary">١. ما هي عملية زرع شريان بالقدم؟</h4>
+              <p>
+                هي عملية جراحية دقيقة يتم فيها توصيل مسار شرياني جديد داخل الطرف السفلي للمريض داخل غرفة العمليات، بواسطة جراح أوعية دموية متخصص ومدرّب على هذا النوع من الجراحات الميكروسكوبية الدقيقة.
+              </p>
+            </div>
+
+            <div class="space-y-3">
+              <h4 class="text-lg sm:text-xl font-bold text-primary">٢. ما هي دواعي عملية زرع الشرايين؟</h4>
+              <ul class="list-disc list-inside space-y-2 pr-2">
+                <li>حالات الانسداد الطويل للشرايين (عندما يتجاوز طول الانسداد ٢٠ سنتيمتراً).</li>
+                <li>وجود تكلّس شديد في جدار الشريان يجعل التسليك بالقسطرة صعباً ويعرّض الدعامات للكسر.</li>
+                <li>فشل القسطرة التداخلية في تسليك الشرايين المسدودة.</li>
+                <li>حدوث انسداد أو كسر في الدعامات التي تم تركيبها مسبقاً بالقسطرة.</li>
+                <li>المرضى الذين يرغبون في حل جذري طويل الأمد دون الحاجة لتكرار القسطرة؛ حيث يتراوح متوسط العمر الافتراضي للعملية الجراحية بين ٥ إلى ١٠ سنوات، وغالباً لا يحتاج المريض لإعادتها إذا التزم بالإقلاع عن التدخين وضبط السكر والضغط.</li>
+              </ul>
+            </div>
+
+            <div class="p-5 rounded-2xl bg-teal-50/70 border border-teal-200 space-y-3">
+              <h4 class="text-lg sm:text-xl font-bold text-primary">٣. ما هي مميزات عملية زرع الشرايين مقارنة بالقسطرة وتركيب الدعامات؟</h4>
+              <ul class="list-disc list-inside space-y-2 text-sm sm:text-base">
+                <li><strong>عمر افتراضي أطول:</strong> يتراوح العمر الافتراضي للشريان المزروع بين ٥ إلى ١٠ سنوات، بينما قد تنسد الدعامة خلال عام إلى عامين كحد أقصى.</li>
+                <li><strong>تكلفة أقل بكثير:</strong> تكلفة الجراحة أقل من تكلفة القسطرة والدعامات والمستلزمات المستوردة.</li>
+                <li><strong>عدم التعرض للصبغة:</strong> لا يتعرض المريض للصبغة الإشعاعية أثناء الجراحة، مما يحمي وظائف الكلى.</li>
+                <li><strong>علاج متكامل في جلسة واحدة:</strong> يمكن تنظيف الغرغرينا جراحياً في نفس الوقت داخل غرفة العمليات بالتزامن مع زرع الشريان بدلاً من إجراء التدخلين على مرحلتين.</li>
+              </ul>
+            </div>
+
+            <div class="space-y-2">
+              <h4 class="text-lg sm:text-xl font-bold text-primary">٤. ما هي عيوب عملية زرع الشرايين؟</h4>
+              <p>
+                تتطلب الجراحة عملاً جراحياً للوصول إلى الشرايين وبقاء المريض بالمستشفى لمدة أسبوع بعد العملية؛ إلا أن هذه الفترة البسيطة تضمن سرعة التئام الغرغرينا، والحصول على تدفق دموي قوي ومستديم يمنع عودة الغرغرينا مرة أخرى.
+              </p>
+            </div>
+
+            <div class="space-y-2">
+              <h4 class="text-lg sm:text-xl font-bold text-primary">٥. كيفية إجراء عملية زرع الشرايين؟</h4>
+              <p>
+                تُجرى العملية داخل غرفة عمليات مجهزة ومعقمة تحت تأثير <strong>التخدير النصفي</strong> (دون الحاجة لتخدير كلي). يقوم جراح الأوعية الدموية بعمل فتحات جراحية للوصول إلى الشريان السليم أعلى الانسداد وأسفله، ثم يستخرج <strong>الوريد الصافن</strong> الموجود أسفل جلد الفخذ — وهو بمثابة قطعة غيار طبيعية خلقها الله داخل جسم الإنسان — ليُستخدم في تحويل مسار الدم وتجاوز الجزء المسدود.
+              </p>
+              <p>
+                وباستخدام خيوط جراحية بالغة الدقة وأدوات جراحة الأوعية، يتم توصيل الوريد أعلى الانسداد وأسفله، وبمجرد فتح مجرى الدم يندفع الدم المحمّل بالأكسجين والمضادات الحيوية وكرات الدم البيضاء إلى القدم ومنطقة الغرغرينا لمحاربة العدوى وبناء الأنسجة من جديد، وقد تُزال الخلايا الميتة في نفس الجلسة لحماية القدم من البتر نهائياً بإذن الله.
+              </p>
+            </div>
+          </div>
+
+          <!-- Quick Facts Grid (Questions 6 - 14) -->
+          <div class="space-y-4">
+            <h4 class="text-lg sm:text-xl font-bold text-primary border-b border-slate-200 pb-2">تفاصيل التخدير والإقامة والتعافي بعد العملية</h4>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200 space-y-1.5">
+                <h5 class="font-bold text-primary text-base">٦. ما هو نوع التخدير المستخدم؟</h5>
+                <p class="text-sm text-slate-600">التخدير النصفي بين فقرات الظهر؛ وهو الأكثر أماناً على القلب والصدر حيث يظل المريض مستيقظاً دون ألم، كما تُستخدم قسطرته لتسكين الألم بكفاءة بعد الجراحة.</p>
+              </div>
+
+              <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200 space-y-1.5">
+                <h5 class="font-bold text-primary text-base">٧. هل يحتاج المريض لنقل دم أثناء العملية؟</h5>
+                <p class="text-sm text-slate-600">لا يحتاج المريض إلى نقل دم أثناء عملية زرع الشرايين.</p>
+              </div>
+
+              <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200 space-y-1.5">
+                <h5 class="font-bold text-primary text-base">٨. كم مدة الإقامة في المستشفى؟</h5>
+                <p class="text-sm text-slate-600">يمكث المريض في المستشفى لمدة <strong>أسبوع واحد</strong> للمتابعة الطبية والعناية بالجروح.</p>
+              </div>
+
+              <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200 space-y-1.5">
+                <h5 class="font-bold text-primary text-base">٩. كيف يتم التحكم في الألم بعد العملية؟</h5>
+                <p class="text-sm text-slate-600">تتوفر طرق حديثة لتسكين الألم تشمل قسطرة المخدر النصفي أو جهاز التحكم الذاتي بالمسكنات (PCA) المتصل بالوريد، والذي يمنح جرعة فورية عند الضغط على الزر.</p>
+              </div>
+
+              <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200 space-y-1.5">
+                <h5 class="font-bold text-primary text-base">١٠. متى يعود المريض لحياته الطبيعية؟</h5>
+                <p class="text-sm text-slate-600">يعود المريض لممارسة حياته الطبيعية خلال <strong>ثلاثة أسابيع</strong> من الجراحة.</p>
+              </div>
+
+              <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200 space-y-1.5">
+                <h5 class="font-bold text-primary text-base">١١. متى يستطيع المريض الأكل والشرب؟</h5>
+                <p class="text-sm text-slate-600">فور وصوله إلى غرفته بعد انتهاء العملية مباشرة.</p>
+              </div>
+
+              <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200 space-y-1.5">
+                <h5 class="font-bold text-primary text-base">١٢. هل يحتاج المريض لدخول العناية المركزة؟</h5>
+                <p class="text-sm text-slate-600">لا يحتاج المريض للعناية المركزة لأن العملية آمنة، باستثناء بعض مرضى القلب الذين قد يبقون ليلة واحدة للملاحظة القلبية للاطمئنان.</p>
+              </div>
+
+              <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200 space-y-1.5">
+                <h5 class="font-bold text-primary text-base">١٣. هل تصلح العملية لمرضى القلب والكلى؟</h5>
+                <p class="text-sm text-slate-600">نعم، بفضل التخدير النصفي وعدم استخدام الصبغة تُعد العملية آمنة جداً لمرضى القلب والضغط والسكري والقصور الكلوي.</p>
+              </div>
+
+              <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200 space-y-1.5 md:col-span-2">
+                <h5 class="font-bold text-primary text-base">١٤. هل تلتئم الجروح بصورة طبيعية لدى مرضى السكري؟</h5>
+                <p class="text-sm text-slate-600">نعم؛ مع وصول الدم الجديد بكفاءة، والالتزام بضبط السكر والغيار الطبي المنتظم، تلتئم الجروح بمعدل طبيعي تماماً.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Detailed Q&A (Questions 15 - 27) -->
+          <div class="space-y-4">
+            <h4 class="text-lg sm:text-xl font-bold text-primary border-b border-slate-200 pb-2">أسئلة شائعة حول الشريان المزروع والنتائج طويلة الأمد</h4>
+            <div class="space-y-4 text-sm sm:text-base">
+              <div>
+                <h5 class="font-bold text-primary">١٥. من أين يأتي الجراح بالشريان المزروع؟</h5>
+                <p class="text-slate-600">يُعد <strong>الوريد الصافن الطبيعي</strong> من ساق المريض هو الخيار الأمثل لأنه جزء من جسمه ويحقق أعلى نسب النجاح. وفي حال عدم صلاحيته (بسبب الدوالي أو الجلطات أو استخدامه سابقاً في جراحة قلب)، يُستخدم شريان صناعي طبي مخصص.</p>
+              </div>
+
+              <div>
+                <h5 class="font-bold text-primary">١٦. هل يمكن أخذ الوريد من أحد أقارب المريض؟</h5>
+                <p class="text-slate-600">لا يُفضل ذلك، حيث يتوفر الشريان الصناعي كبديل جاهز وآمن عند عدم صلاحية الوريد الطبيعي للمريض.</p>
+              </div>
+
+              <div>
+                <h5 class="font-bold text-primary">١٧. متى تكون الجراحة أفضل من تركيب الدعامات؟</h5>
+                <p class="text-slate-600">تُعد الدعامة مناسبة للضيق القصير الذي لا يتجاوز ١٠ سم، أما في الانسدادات الطويلة (أكثر من ١٠ – ٢٠ سم) وحالات التكلس الشديد، فتكون الجراحة هي الحل الأفضل والأكثر استدامة.</p>
+              </div>
+
+              <div>
+                <h5 class="font-bold text-primary">١٨. ماذا يحدث للغرغرينا بعد نجاح العملية؟</h5>
+                <p class="text-slate-600">الغرغرينا السطحية تجف وتتحول إلى قشرة يطردها الجسم تلقائياً، أما الغرغرينا العميقة فتُزال جراحياً بلطف لحماية الأنسجة السليمة المجاورة ومساعدتها على الالتئام.</p>
+              </div>
+
+              <div>
+                <h5 class="font-bold text-primary">١٩. متى يتم فك الغرز الجراحية؟</h5>
+                <p class="text-slate-600">بعد مرور <strong>أسبوعين</strong> من العملية.</p>
+              </div>
+
+              <div>
+                <h5 class="font-bold text-primary">٢٠. هل يحتاج المريض لأدوية سيولة مكلفة مدى الحياة؟</h5>
+                <p class="text-slate-600">على عكس الدعامات التي تتطلب عدة أدوية سيولة مرتفعة التكلفة، يحتاج المريض بعد جراحة زرع الشريان غالباً إلى <strong>قرص أسبرين يومي فقط</strong>.</p>
+              </div>
+
+              <div>
+                <h5 class="font-bold text-primary">٢١. كيف تتم المتابعة الدورية بعد العملية؟</h5>
+                <p class="text-slate-600">يُفضّل إجراء أشعة تلفزيونية ملونة (دوبلكس) مرة كل عام للاطمئنان على كفاءة الشريان المزروع واكتشاف أي ضيق مبكراً.</p>
+              </div>
+
+              <div>
+                <h5 class="font-bold text-primary">٢٢. ما هو متوسط العمر الافتراضي للشريان المزروع؟</h5>
+                <p class="text-slate-600">يتراوح بين <strong>٥ إلى ١٠ سنوات</strong>، وهي مدة طويلة جداً مقارنة بالدعامات التي غالباً ما تتعرض للضيق خلال عام واحد.</p>
+              </div>
+
+              <div>
+                <h5 class="font-bold text-primary">٢٣. هل تدفق الدم أفضل بعد الجراحة أم بعد القسطرة؟</h5>
+                <p class="text-slate-600">تدفق الدم عبر مسار شرياني جديد وسليم يكون أقوى وأفضل بكثير من مروره داخل شريان متكلس ومريض تم توسيعه بالدعامات.</p>
+              </div>
+
+              <div>
+                <h5 class="font-bold text-primary">٢٤. هل الجراحة هي الحل الأمثل بعد فشل القسطرة أو انسداد الدعامات؟</h5>
+                <p class="text-slate-600">نعم، بالتأكيد؛ فهي توفر مساراً بديلاً يتجاوز المنطقة المتضررة بالكامل.</p>
+              </div>
+
+              <div>
+                <h5 class="font-bold text-primary">٢٥. لماذا تُجرى هذه الجراحة بأعداد أقل رغم تفوق نتائجها؟</h5>
+                <p class="text-slate-600">لأن جراحات توصيل الشرايين الطرفية الدقيقة تتطلب مهارة جراحية عالية وسنوات طويلة من التدريب المتخصص، بينما يُعد تركيب الدعامات إجراءً أسهل في التعلم.</p>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+                <div class="p-4 rounded-xl bg-primary/5 border border-primary/15">
+                  <h5 class="font-bold text-primary">٢٦. كم تستغرق العملية؟</h5>
+                  <p class="text-slate-700 font-semibold mt-1">تستغرق العملية من ٤ إلى ٥ ساعات.</p>
+                </div>
+                <div class="p-4 rounded-xl bg-primary/5 border border-primary/15">
+                  <h5 class="font-bold text-primary">٢٧. كيف تقارن التكلفة بالدعامات؟</h5>
+                  <p class="text-slate-700 font-semibold mt-1">تكلفة الجراحة أقل بكثير لعدم استخدام دعامات أو بالونات مستوردة باهظة الثمن.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- English Summary -->
+        <div data-lang="en" class="space-y-4 text-slate-700 text-base leading-relaxed">
+          <h3 class="text-2xl font-bold text-primary">Lower-Extremity Arterial Bypass: Definitive Gangrene Salvage Without Amputation</h3>
+          <p class="text-xs text-slate-500 font-semibold">Prof. Dr. Ahmed Mahrouky • September 22, 2022 • 5 min read</p>
+          <p>
+            Lower-extremity arterial bypass surgery creates a new vascular conduit—ideally using the patient's own <strong>great saphenous vein</strong>—to reroute blood around long arterial occlusions (&gt;10–20 cm), heavily calcified vessels, or failed endovascular stents.
+          </p>
+          <ul class="list-disc list-inside space-y-2">
+            <li><strong>Durability & Cost:</strong> Provides superior blood flow lasting 5–10 years at a significantly lower cost than multiple stents, requiring only daily low-dose aspirin afterward.</li>
+            <li><strong>Safe Anesthesia:</strong> Performed under spinal anesthesia (4–5 hours) without contrast dye, making it safe for cardiac and renal patients.</li>
+            <li><strong>Recovery Timeline:</strong> 1 week hospital stay, suture removal at 2 weeks, and full return to normal activities within 3 weeks.</li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- Article 2: Step-by-Step Diabetic Foot Wound Dressing -->
+      <article id="article-2" class="scroll-mt-24 bg-white rounded-3xl border border-slate-200 shadow-sm p-6 sm:p-10 space-y-6">
+        <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-100 pb-4">
+          <div class="flex flex-wrap items-center gap-2 text-xs font-bold">
+            <span class="px-3 py-1 rounded-full bg-teal-50 text-accent">
+              <span data-lang="ar">مقال رقم ٢</span>
+              <span data-lang="en">Article #2</span>
+            </span>
+            <span class="text-slate-500">
+              <span data-lang="ar">أ.د. أحمد المحروقي • ٢٢ سبتمبر ٢٠٢٠ (تحديث: ٢٣ سبتمبر ٢٠٢٠) • دقيقة قراءة</span>
+              <span data-lang="en">Prof. Dr. Ahmed Mahrouky • Sep 22, 2020 (Updated: Sep 23, 2020) • 1 min read</span>
+            </span>
+          </div>
+          <a href="#top" class="text-xs font-bold text-slate-500 hover:text-primary transition">
+            <span data-lang="ar">↑ العودة للفهرس</span>
+            <span data-lang="en">↑ Back to Index</span>
+          </a>
+        </div>
+
+        <!-- Arabic Content -->
+        <div data-lang="ar" class="space-y-6 text-slate-700 text-base sm:text-lg leading-relaxed">
+          <h3 class="text-2xl sm:text-3xl font-extrabold text-primary leading-snug">
+            طريقة الغيار على جروح القدم السكري خطوة بخطوة
+          </h3>
+
+          <p class="text-slate-600">
+            يُعد الغيار المنزلي السليم على جروح القدم السكري خطوة أساسية لحماية الجرح من التلوث وتسريع التئام الأنسجة دون التسبب في أي نزيف أو أذى للجلد المحيط. اتبع هذه الخطوات العشر بدقة عند كل غيار:
+          </p>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200 flex items-start gap-3.5">
+              <span class="w-8 h-8 rounded-xl bg-primary text-white font-bold text-sm flex items-center justify-center shrink-0 mt-0.5">١</span>
+              <div>
+                <h4 class="font-bold text-primary text-base">غسل اليدين جيداً</h4>
+                <p class="text-sm text-slate-600 mt-1">اغسل يديك بالماء والصابون جيداً قبل لمس أي أدوات طبية أو الاقتراب من الجرح.</p>
+              </div>
+            </div>
+
+            <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200 flex items-start gap-3.5">
+              <span class="w-8 h-8 rounded-xl bg-primary text-white font-bold text-sm flex items-center justify-center shrink-0 mt-0.5">٢</span>
+              <div>
+                <h4 class="font-bold text-primary text-base">ارتداء قفازات طبية معقمة</h4>
+                <p class="text-sm text-slate-600 mt-1">احرص على ارتداء جوانتي طبي معقم لمنع انتقال أي بكتيريا إلى الجرح.</p>
+              </div>
+            </div>
+
+            <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200 flex items-start gap-3.5">
+              <span class="w-8 h-8 rounded-xl bg-primary text-white font-bold text-sm flex items-center justify-center shrink-0 mt-0.5">٣</span>
+              <div>
+                <h4 class="font-bold text-primary text-base">تجهيز أدوات الغيار مسبقاً</h4>
+                <p class="text-sm text-slate-600 mt-1">جهّز أمامك كل ما ستحتاجه: محلول ملحي، شاش معقم، رباط شاش (أو رباط ضاغط حسب تعليمات الطبيب)، وبلاستر طبي.</p>
+              </div>
+            </div>
+
+            <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200 flex items-start gap-3.5">
+              <span class="w-8 h-8 rounded-xl bg-primary text-white font-bold text-sm flex items-center justify-center shrink-0 mt-0.5">٤</span>
+              <div>
+                <h4 class="font-bold text-primary text-base">توفير إضاءة جيدة وواضحة</h4>
+                <p class="text-sm text-slate-600 mt-1">اجلس في مكان ذي إضاءة قوية تتيح لك رؤية الجرح والجلد المحيط به بوضوح تام.</p>
+              </div>
+            </div>
+
+            <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200 flex items-start gap-3.5">
+              <span class="w-8 h-8 rounded-xl bg-primary text-white font-bold text-sm flex items-center justify-center shrink-0 mt-0.5">٥</span>
+              <div>
+                <h4 class="font-bold text-primary text-base">قص الرباط الخارجي برفق</h4>
+                <p class="text-sm text-slate-600 mt-1">ابدأ بقص وفك الرباط الخارجي باستخدام المقص بحذر شديد حتى لا تجرح الجلد السليم.</p>
+              </div>
+            </div>
+
+            <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200 flex items-start gap-3.5">
+              <span class="w-8 h-8 rounded-xl bg-primary text-white font-bold text-sm flex items-center justify-center shrink-0 mt-0.5">٦</span>
+              <div>
+                <h4 class="font-bold text-primary text-base">ترطيب الشاش قبل إزالته</h4>
+                <p class="text-sm text-slate-600 mt-1">اسكب المحلول الملحي برفق على الشاش القديم الملتصق بالجرح حتى يتشبع تماماً؛ فهذا يمنع شد الأنسجة أو حدوث نزيف بسيط.</p>
+              </div>
+            </div>
+
+            <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200 flex items-start gap-3.5">
+              <span class="w-8 h-8 rounded-xl bg-primary text-white font-bold text-sm flex items-center justify-center shrink-0 mt-0.5">٧</span>
+              <div>
+                <h4 class="font-bold text-primary text-base">رفع الشاش القديم بلطف وتنظيف الجرح</h4>
+                <p class="text-sm text-slate-600 mt-1">بعد تشبع الشاش بالمحلول الملحي، أزِله بسهولة ورفق دون شد، ثم نظّف سطح الجرح بالمحلول الملحي.</p>
+              </div>
+            </div>
+
+            <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200 flex items-start gap-3.5">
+              <span class="w-8 h-8 rounded-xl bg-primary text-white font-bold text-sm flex items-center justify-center shrink-0 mt-0.5">٨</span>
+              <div>
+                <h4 class="font-bold text-primary text-base">وضع العلاج والغيار المعقم الجديد</h4>
+                <p class="text-sm text-slate-600 mt-1">ضع المرهم أو المطهر الذي وصفه الطبيب، ثم غطِّ الجرح بشاش معقم عادي أو شاش علاجي مخصص حسب إرشادات الطبيب.</p>
+              </div>
+            </div>
+
+            <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200 flex items-start gap-3.5">
+              <span class="w-8 h-8 rounded-xl bg-primary text-white font-bold text-sm flex items-center justify-center shrink-0 mt-0.5">٩</span>
+              <div>
+                <h4 class="font-bold text-primary text-base">لف رباط الشاش حول القدم</h4>
+                <p class="text-sm text-slate-600 mt-1">لف رباط الشاش حول القدم بنعومة لتثبيت الغيار دون شدّه بقوة حتى لا يعيق الدورة الدموية.</p>
+              </div>
+            </div>
+
+            <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200 flex items-start gap-3.5">
+              <span class="w-8 h-8 rounded-xl bg-accent text-white font-bold text-sm flex items-center justify-center shrink-0 mt-0.5">١٠</span>
+              <div>
+                <h4 class="font-bold text-primary text-base">تثبيت الرباط بالبلاستر الطبي</h4>
+                <p class="text-sm text-slate-600 mt-1">ثبّت طرف الرباط باستخدام البلاستر الطبي على الشاش نفسه وليس مباشرة على جلد القدم الحساس.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="p-4 rounded-2xl bg-amber-50 border-r-4 border-amber-500 text-amber-900 text-sm sm:text-base">
+            <strong>تنبيه مهم:</strong> إذا لاحظت أثناء الغيار أي احمرار متزايد، أو تورم، أو رائحة غير معتادة، أو إفرازات صديدية، تواصل مع الطبيب فوراً للفحص.
+          </div>
+        </div>
+
+        <!-- English Summary -->
+        <div data-lang="en" class="space-y-4 text-slate-700 text-base leading-relaxed">
+          <h3 class="text-2xl font-bold text-primary">Step-by-Step Guide to Diabetic Foot Wound Dressing</h3>
+          <p class="text-xs text-slate-500 font-semibold">Prof. Dr. Ahmed Mahrouky • September 22, 2020 (Updated: Sep 23, 2020) • 1 min read</p>
+          <ol class="list-decimal list-inside space-y-2">
+            <li>Wash hands thoroughly with soap and water.</li>
+            <li>Put on sterile medical gloves.</li>
+            <li>Prepare all supplies beforehand (sterile gauze, normal saline, bandage roll, medical tape).</li>
+            <li>Ensure bright, clear lighting to inspect the wound properly.</li>
+            <li>Carefully cut the outer bandage with scissors without nicking the skin.</li>
+            <li>Soak the inner adherent gauze with sterile normal saline to prevent bleeding or trauma.</li>
+            <li>Gently lift away the moistened gauze and cleanse the wound bed with saline.</li>
+            <li>Apply the physician-prescribed ointment/antiseptic and cover with sterile or medicated gauze.</li>
+            <li>Wrap a gauze bandage gently around the foot without restricting blood circulation.</li>
+            <li>Secure the bandage using medical tape (avoid taping directly onto fragile skin).</li>
+          </ol>
+        </div>
+      </article>
+
+      <!-- Article 3: Diabetic Foot Ulcer Treatment Options (FAQ Format) -->
+      <article id="article-3" class="scroll-mt-24 bg-white rounded-3xl border border-slate-200 shadow-sm p-6 sm:p-10 space-y-6">
+        <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-100 pb-4">
+          <div class="flex flex-wrap items-center gap-2 text-xs font-bold">
+            <span class="px-3 py-1 rounded-full bg-teal-50 text-accent">
+              <span data-lang="ar">مقال رقم ٣ • أسئلة وأجوبة</span>
+              <span data-lang="en">Article #3 • FAQ</span>
+            </span>
+            <span class="text-slate-500">
+              <span data-lang="ar">أ.د. أحمد المحروقي • ١ مايو ٢٠٢٠ (تحديث: ٢٢ سبتمبر ٢٠٢٠) • ٤ دقائق قراءة</span>
+              <span data-lang="en">Prof. Dr. Ahmed Mahrouky • May 1, 2020 (Updated: Sep 22, 2020) • 4 min read</span>
+            </span>
+          </div>
+          <a href="#top" class="text-xs font-bold text-slate-500 hover:text-primary transition">
+            <span data-lang="ar">↑ العودة للفهرس</span>
+            <span data-lang="en">↑ Back to Index</span>
+          </a>
+        </div>
+
+        <!-- Arabic FAQ Content -->
+        <div data-lang="ar" class="space-y-6 text-slate-700 text-base sm:text-lg leading-relaxed">
+          <h3 class="text-2xl sm:text-3xl font-extrabold text-primary leading-snug">
+            وسائل علاج قرحة القدم السكري: أسئلة وأجوبة شاملة تهم كل مريض
+          </h3>
+
+          <div class="space-y-5">
+            <!-- Q1 -->
+            <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200 space-y-2">
+              <h4 class="font-bold text-primary text-lg">س١: ما هي القرحة؟ وما المقصود بقرحة القدم السكري؟</h4>
+              <p class="text-slate-700">
+                <strong>القرحة</strong> هي فتحة أو جرح عميق في الجلد يبطؤ التئامه. وتُعرف <strong>قرحة القدم السكري</strong> بأنها جرح يظهر في قدم مريض السكري نتيجة تأثر الأعصاب الطرفية أو ضعف الدورة الدموية أو زيادة الضغط على نقاط معينة من باطن القدم.
+              </p>
+            </div>
+
+            <!-- Q2 -->
+            <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200 space-y-3">
+              <h4 class="font-bold text-primary text-lg">س٢: لماذا تحدث قرحة القدم السكري؟</h4>
+              <p>
+                تحدث تقرحات القدم السكري بشكل رئيسي نتيجة <strong>التهاب الأعصاب الطرفية</strong> بعد سنوات من ارتفاع مستوى السكر في الدم، ولذلك تُسمى «قرحة القدم السكري العصبية». ويؤثر السكر على ثلاثة أنواع من الأعصاب:
+              </p>
+              <ul class="list-disc list-inside space-y-2 pr-2 text-sm sm:text-base">
+                <li><strong>التهاب العصب الحسي:</strong> يفقد المريض الشعور بالألم، وهو نعمة وهبها الله لحماية الجسم من الأذى؛ فيتعرض المريض للجروح أو الحروق أو الحصى داخل الحذاء دون أن يشعر، مما يؤخر اكتشاف الجرح وعلاجه مبكراً.</li>
+                <li><strong>التهاب العصب الحركي:</strong> يسبب ضعفاً في عضلات القدم الدقيقة وظهور تشوهات مثل «الأصابع المخلبية» أو «الأصابع المطرقية»، مما يخل بتوزيع وزن الجسم ويركّز الضغط على نقاط محددة فينجرح الجلد تحتها.</li>
+                <li><strong>التهاب العصب اللاإرادي (السمبثاوي):</strong> يؤدي إلى توقف الغدد العرقية والدهنية بالقدم، فيصبح الجلد جافاً وصلباً وسهل التشقق والقطع عند الاحتكاك.</li>
+              </ul>
+              <p class="text-sm sm:text-base text-slate-600 pt-1">
+                <strong>أسباب إضافية:</strong> قد تنتج القرحة أيضاً عن كسور العظام الصامتة في مرضى السكري (مثل <strong>قدم شاركو</strong>)، أو بعد جراحات بتر أحد الأصابع حيث يتوزع وزن الجسم على عدد أقل من الأصابع فيزداد الضغط تحتها.
+              </p>
+            </div>
+
+            <!-- Q3 -->
+            <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200 space-y-2">
+              <h4 class="font-bold text-primary text-lg">س٣: كيف يتم تشخيص قرحة القدم السكري؟ وما علامات خطورتها؟</h4>
+              <p>
+                تظهر قرحة القدم السكري غالباً في أماكن الضغط المعروفة: أطراف الأصابع، أو باطن القدم أسفل رؤوس العظام المشطية، أو منتصف القدم، أو الكعب. وتتميز بحواف من الجلد السميك المتقرن (يُسمى <strong>الكاللو</strong>) مع فقدان الإحساس حولها، وقد تمتد في العمق لتصل إلى العظام.
+              </p>
+              <p class="text-sm sm:text-base text-slate-700">
+                <strong>علامات العدوى والمضاعفات:</strong> ظهور احمرار متزايد حول القرحة، أو إفرازات صديدية، أو رائحة كريهة، أو ارتفاع في درجة حرارة الجسم؛ فإهمال العدوى قد يؤدي إلى تكوّن خراج عميق أو تسوس بالعظام (التهاب العظم والنقي) مما قد يهدد القدم بالبتر لا قدر الله (حيث تبدأ نحو ١٥٪ من حالات البتر بقرحة قدم سكري مُهملة).
+              </p>
+            </div>
+
+            <!-- Q4 -->
+            <div class="p-5 rounded-2xl bg-teal-50/70 border border-teal-200 space-y-3">
+              <h4 class="font-bold text-primary text-lg">س٤: ما هي مراحل ووسائل علاج قرحة القدم السكري؟</h4>
+              <p>يمر علاج قرحة القدم السكري بمراحل طبية متدرجة يحددها الطبيب المختص حسب عمق القرحة وحالة الشرايين:</p>
+              <ol class="list-decimal list-inside space-y-2.5 pr-2 text-sm sm:text-base">
+                <li><strong>المرحلة الأولى (العلاج التحفظي وتفريغ الضغط):</strong> تشمل المضادات الحيوية المناسبة، والمراهم والغيارات الطبية، وتنظيف القرحة وإزالة الجلد السميك (الكاللو) أسبوعياً أو مرتين أسبوعياً في العيادة، مع ارتداء <strong>حذاء طبي مخصص لتفريغ الضغط</strong> عن مكان القرحة لمدة تتراوح بين شهر ونصف إلى شهرين.</li>
+                <li><strong>المرحلة الثانية (التدخل الجراحي التصحيحي):</strong> إذا لم تستجب القرحة للعلاج التحفظي أو حدثت مضاعفات عميقة، يتم التدخل جراحياً لتنظيف القرحة وإعادة التوازن الميكانيكي للقدم (عبر جراحات دقيقة على الأوتار أو العظام) لمنع تكرر القرحة.</li>
+                <li><strong>الجبس الطبي التلامسي (Total Contact Cast):</strong> وسيلة فعّالة لحماية القرحة من الضغط وتسريع التئامها، لكنها تتطلب تغييره أسبوعياً على يد طبيب عالي التدريب، وقد ترفع التكلفة أو تعيق حركة بعض المرضى الذين يعانون من ضعف التوازن، كما تمنع الفحص اليومي للقرحة طوال الأسبوع.</li>
+              </ol>
+            </div>
+
+            <!-- Q5 -->
+            <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200 space-y-2">
+              <h4 class="font-bold text-primary text-lg">س٥: هل يفيد علاج قرحة القدم السكري بالأعشاب؟</h4>
+              <p>
+                العلاج بالأعشاب والوصفات الشعبية <strong>غير كافٍ وخطير</strong> إذا استُخدم كبديل للعلاج الطبي؛ لأنه لا يعالج الأسباب الجذرية للقرحة مثل ضعف التروية الدموية، والتهاب الأعصاب، والعدوى البكتيرية العميقة. ولا يجوز وضع أي مستحضرات غير طبية على الجرح دون استشارة الطبيب المختص حتى لا تتفاقم الحالة.
+              </p>
+            </div>
+
+            <!-- Q6 & Q7 Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div class="p-5 rounded-2xl bg-emerald-50/70 border border-emerald-200 space-y-2">
+                <h4 class="font-bold text-primary text-base sm:text-lg">س٦: هل يمكن علاج قرحة القدم السكري بدون بتر؟</h4>
+                <p class="text-sm sm:text-base text-slate-700">
+                  <strong>نعم بالتأكيد؛</strong> القرحة في مراحلها المبكرة لا تحتاج إلى بتر ويمكن شفاؤها تماماً بالرعاية الطبية السليمة وتفريغ الضغط. أما الإهمال أو اللجوء لوصفات غير طبية دون متابعة طبيب متخصص فهو ما يؤدي لتدهور الحالة والوصول للبتر.
+                </p>
+              </div>
+
+              <div class="p-5 rounded-2xl bg-red-50/70 border border-red-200 space-y-2">
+                <h4 class="font-bold text-red-900 text-base sm:text-lg">س٧: هل وجود رائحة كريهة من قرحة القدم السكري يُعد خطراً؟</h4>
+                <p class="text-sm sm:text-base text-red-800">
+                  <strong>نعم، هو مؤشر خطر يستدعي التوجه للطبيب فوراً؛</strong> لأن الرائحة الكريهة تدل على وجود عدوى ببكتيريا لاهوائية شرسة قد تتطور سريعاً إلى غرغرينا وتسمم في الدم إذا لم تُعالج عاجلاً.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- English FAQ Summary -->
+        <div data-lang="en" class="space-y-4 text-slate-700 text-base leading-relaxed">
+          <h3 class="text-2xl font-bold text-primary">Diabetic Foot Ulcer Treatment Options (FAQ Guide)</h3>
+          <p class="text-xs text-slate-500 font-semibold">Prof. Dr. Ahmed Mahrouky • May 1, 2020 (Updated: Sep 22, 2020) • 4 min read</p>
+          <ul class="space-y-3">
+            <li><strong>What causes diabetic foot ulcers?</strong> Primarily diabetic peripheral neuropathy affecting sensory nerves (loss of protective pain sensation), motor nerves (foot deformities like claw toes increasing plantar pressure), and autonomic nerves (dry, cracked skin), alongside Charcot foot fractures.</li>
+            <li><strong>How are ulcers treated?</strong> Management progresses from conservative care (targeted antibiotics, weekly debridement of surrounding callus, and pressure-offloading footwear for 6–8 weeks) to total contact casting or corrective tendon/bone surgery when needed.</li>
+            <li><strong>Warning signs & herbal remedies:</strong> Herbal remedies alone cannot address ischemia or deep infection. Foul odor from an ulcer indicates anaerobic bacterial infection requiring immediate specialist care to prevent gangrene and amputation.</li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- Article 4: Why Prof. Dr. Ahmed Mahrouky is a Leading Diabetic Foot Specialist in Egypt -->
+      <article id="article-4" class="scroll-mt-24 bg-white rounded-3xl border border-slate-200 shadow-sm p-6 sm:p-10 space-y-6">
+        <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-100 pb-4">
+          <div class="flex flex-wrap items-center gap-2 text-xs font-bold">
+            <span class="px-3 py-1 rounded-full bg-teal-50 text-accent">
+              <span data-lang="ar">مقال رقم ٤</span>
+              <span data-lang="en">Article #4</span>
+            </span>
+            <span class="text-slate-500">
+              <span data-lang="ar">أ.د. أحمد المحروقي • ١٦ أبريل ٢٠٢٠ (تحديث: ٢٢ سبتمبر ٢٠٢٠) • دقيقة قراءة</span>
+              <span data-lang="en">Prof. Dr. Ahmed Mahrouky • Apr 16, 2020 (Updated: Sep 22, 2020) • 1 min read</span>
+            </span>
+          </div>
+          <a href="#top" class="text-xs font-bold text-slate-500 hover:text-primary transition">
+            <span data-lang="ar">↑ العودة للفهرس</span>
+            <span data-lang="en">↑ Back to Index</span>
+          </a>
+        </div>
+
+        <!-- Arabic Content -->
+        <div data-lang="ar" class="space-y-5 text-slate-700 text-base sm:text-lg leading-relaxed">
+          <h3 class="text-2xl sm:text-3xl font-extrabold text-primary leading-snug">
+            لماذا يُعد أ.د. أحمد المحروقي من أفضل أطباء علاج القدم السكري في مصر؟
+          </h3>
+          <p>
+            يُعد <strong>الأستاذ الدكتور أحمد المحروقي</strong> أستاذاً بكلية طب قصر العيني — أقدم وأعرق كلية طب في مصر والوطن العربي — ويمتلك خبرة أكاديمية وإكلينيكية تمتد لأكثر من عشر سنوات في مجال جراحة الأوعية الدموية وعلاج القدم السكري.
+          </p>
+          <p>
+            وقد أجرى سيادته أكثر من <strong>١٥٠٠ عملية جراحية وتدخل قسطرة متقدم</strong> لإنقاذ مئات الأقدام من خطر البتر، خاصة في الحالات المعقدة التي تشمل الغرغرينا، وقرح القدم السكري المزمنة، والالتهابات الصديدية المتشعبة، مع تركيز تخصصي دقيق يضمن أعلى مستويات التشخيص والعلاج المتكامل للمريض.
+          </p>
+        </div>
+
+        <!-- English Summary -->
+        <div data-lang="en" class="space-y-4 text-slate-700 text-base leading-relaxed">
+          <h3 class="text-2xl font-bold text-primary">Why Prof. Dr. Ahmed Mahrouky Leads Diabetic Foot Care in Egypt</h3>
+          <p class="text-xs text-slate-500 font-semibold">Prof. Dr. Ahmed Mahrouky • April 16, 2020 (Updated: Sep 22, 2020) • 1 min read</p>
+          <p>
+            As a Professor at Cairo University's Kasr Al Ainy Faculty of Medicine with over a decade of focused expertise, Prof. Dr. Ahmed Mahrouky has performed more than 1,500 advanced limb-salvage procedures—successfully treating complex gangrene, chronic diabetic ulcers, and deep infections to prevent amputation.
+          </p>
+        </div>
+      </article>
+
+      <!-- Article 5: Daily Protection & Preventive Care for the Diabetic Foot -->
+      <article id="article-5" class="scroll-mt-24 bg-white rounded-3xl border border-slate-200 shadow-sm p-6 sm:p-10 space-y-6">
+        <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-100 pb-4">
+          <div class="flex flex-wrap items-center gap-2 text-xs font-bold">
+            <span class="px-3 py-1 rounded-full bg-teal-50 text-accent">
+              <span data-lang="ar">مقال رقم ٥</span>
+              <span data-lang="en">Article #5</span>
+            </span>
+            <span class="text-slate-500">
+              <span data-lang="ar">أ.د. أحمد المحروقي • ٢٣ أبريل ٢٠٢٠ • ٣ دقائق قراءة</span>
+              <span data-lang="en">Prof. Dr. Ahmed Mahrouky • Apr 23, 2020 • 3 min read</span>
+            </span>
+          </div>
+          <a href="#top" class="text-xs font-bold text-slate-500 hover:text-primary transition">
+            <span data-lang="ar">↑ العودة للفهرس</span>
+            <span data-lang="en">↑ Back to Index</span>
+          </a>
+        </div>
+
+        <!-- Arabic Content -->
+        <div data-lang="ar" class="space-y-6 text-slate-700 text-base sm:text-lg leading-relaxed">
+          <h3 class="text-2xl sm:text-3xl font-extrabold text-primary leading-snug">
+            طرق الحماية اليومية من مضاعفات القدم السكري
+          </h3>
+
+          <p>
+            الوقاية اليومية المنتظمة هي حجر الأساس لحماية مريض السكري من القرح والالتهابات الخطيرة. باتباع خطوات بسيطة قبل النوم كل ليلة، يمكنك الحفاظ على سلامة قدميك وتجنب أي مضاعفات:
+          </p>
+
+          <!-- Step 1: Washing & Testing Water Temperature -->
+          <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200 space-y-3">
+            <h4 class="font-bold text-primary text-lg">١. غسل القدمين يومياً واختبار حرارة الماء بالكوع</h4>
+            <p class="text-sm sm:text-base">
+              اغسل قدميك يومياً قبل النوم بالماء الدافئ وصابون لطيف (أو مطهر مخفف مناسب)، مع تدليك القدم بلطف في اتجاهات مختلفة لتنشيط الدورة الدموية الطرفية.
+            </p>
+            <div class="p-4 rounded-xl bg-amber-50 border-r-4 border-amber-500 text-amber-900 text-sm">
+              <strong>تحذير هام جداً:</strong> لا تعتمد على اليد أو القدم لاختبار سخونة الماء؛ لأن التهاب الأعصاب الطرفية عند مرضى السكري قد يُضعف الإحساس بالحرارة فيشعر المريض بالماء الساخن جداً وكأنه دافئ فيُصاب بحروق دون أن يشعر! اختبر درجة حرارة الماء دائماً <strong>بمنطقة الكوع</strong> لأنها لا تتأثر غالباً بالتهاب الأعصاب الطرفية.
+            </div>
+          </div>
+
+          <!-- Step 2: Drying & Moisturizing -->
+          <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200 space-y-3">
+            <h4 class="font-bold text-primary text-lg">٢. التجفيف الجيد والترطيب السليم للجلد</h4>
+            <ul class="list-disc list-inside space-y-2 pr-2 text-sm sm:text-base">
+              <li><strong>التجفيف بالضغط لا بالفرك:</strong> بعد الغسيل أو الوضوء، جفّف القدمين جيداً بفوطة قطنية ناعمة مخصصة للقدمين، واضغط بالفوطة برفق بين الأصابع دون فرك عنيف حتى لا ينجرح الجلد الرقيق، ولأن ترك الماء بين الأصابع يسبب فطريات (تينيا الأصابع) التي تُعد مدخلاً للميكروبات والحمرة.</li>
+              <li><strong>الترطيب والوقاية من الفطريات:</strong> ادهن الكعبين وظهر القدم بكريم مرطب (مثل الجلسرين أو الكريمات الطبية المرطبة) لمنع التشققات، مع تجنب وضع الكريمات بين الأصابع؛ حيث يُفضَّل وضع بودرة مضادة للفطريات أو بودرة تلك بين الأصابع لامتصاص الرطوبة.</li>
+            </ul>
+          </div>
+
+          <!-- Step 3: Safe Nail Trimming -->
+          <div class="p-5 rounded-2xl bg-teal-50/70 border border-teal-200 space-y-3">
+            <h4 class="font-bold text-primary text-lg">٣. الإرشادات الآمنة لقص الأظافر</h4>
+            <p class="text-sm sm:text-base">
+              يمثل قص الأظافر خطورة خاصة لدى مريض السكري لثلاثة أسباب: ضعف الإبصار (بسبب المياه البيضاء أو تأثر الشبكية)، وضعف الإحساس بالألم في القدم، وزيادة سمك وصلابة الأظافر. لذلك يجب الالتزام بالقواعد التالية:
+            </p>
+            <ul class="list-disc list-inside space-y-2 pr-2 text-sm sm:text-base">
+              <li>استخدم <strong>قصافة أظافر مخصصة</strong> للأظافر السميكة وتجنب المقص العادي أو الأدوات الحادة غير المعقمة.</li>
+              <li>اقص الأظافر <strong>بشكل مستقيم</strong> واترك مسافة آمنة (نحو نصف سنتيمتر) أمام الجلد، وتجنب قص الأركان بشكل دائري حتى لا يحدث «ظفر غائر» أو جرح بالجلد.</li>
+              <li>استخدم مبرداً ناعماً لتسوية حواف الظفر حتى لا تعلق بالجوارب، وامتنع تماماً عن قص أي زوائد جلدية حول الظفر.</li>
+              <li>يُفضَّل الاستعانة بأحد أفراد الأسرة أو مختص العناية بالقدم السكري عند قص الأظافر.</li>
+            </ul>
+          </div>
+
+          <!-- Step 4: Nightly Inspection -->
+          <div class="p-5 rounded-2xl bg-primary/5 border-r-4 border-primary space-y-2">
+            <h4 class="font-bold text-primary text-lg">٤. الفحص اليومي للقدمين قبل النوم</h4>
+            <p class="text-sm sm:text-base text-slate-700">
+              نظراً لضعف الإحساس بالألم، قد يُصاب المريض بجرح أو خدش دون أن يشعر. احرص قبل النوم كل ليلة على فحص باطن القدم وبين الأصابع باستخدام <strong>مرآة</strong> أو بمساعدة الزوجة أو أحد الأبناء لاكتشاف أي تغير مبكراً.
+            </p>
+          </div>
+        </div>
+
+        <!-- English Summary -->
+        <div data-lang="en" class="space-y-4 text-slate-700 text-base leading-relaxed">
+          <h3 class="text-2xl font-bold text-primary">Daily Protection & Preventive Care for the Diabetic Foot</h3>
+          <p class="text-xs text-slate-500 font-semibold">Prof. Dr. Ahmed Mahrouky • April 23, 2020 • 3 min read</p>
+          <ul class="list-disc list-inside space-y-2">
+            <li><strong>Safe Daily Washing:</strong> Wash feet nightly with mild soap and lukewarm water while gently massaging to boost circulation. Always test water temperature with your <strong>elbow</strong> rather than hands or feet to prevent accidental burns from neuropathy.</li>
+            <li><strong>Gentle Drying & Moisturizing:</strong> Pat (never rub) between toes with a dedicated soft towel after washing or ablution to prevent fungal infections (tinea pedis) and cellulitis. Moisturize heels and dry skin while keeping interdigital spaces dry with antifungal powder.</li>
+            <li><strong>Safe Nail Care:</strong> Cut nails straight across using dedicated clippers—leaving a slight margin and avoiding rounded corners or cuticle trimming—and smooth edges with a file. Seek family or specialist assistance if vision or sensation is reduced.</li>
+            <li><strong>Nightly Foot Inspection:</strong> Inspect the soles and between toes every night using a mirror or with help from a family member.</li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- Article 6: Diabetic Foot Wound Closure (Skin Grafts & Local Flaps) -->
+      <article id="article-6" class="scroll-mt-24 bg-white rounded-3xl border border-slate-200 shadow-sm p-6 sm:p-10 space-y-6">
+        <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-100 pb-4">
+          <div class="flex flex-wrap items-center gap-2 text-xs font-bold">
+            <span class="px-3 py-1 rounded-full bg-teal-50 text-accent">
+              <span data-lang="ar">مقال رقم ٦</span>
+              <span data-lang="en">Article #6</span>
+            </span>
+            <span class="text-slate-500">
+              <span data-lang="ar">أ.د. أحمد المحروقي • ٢٣ أبريل ٢٠٢٠ • ٢ دقيقة قراءة</span>
+              <span data-lang="en">Prof. Dr. Ahmed Mahrouky • Apr 23, 2020 • 2 min read</span>
+            </span>
+          </div>
+          <a href="#top" class="text-xs font-bold text-slate-500 hover:text-primary transition">
+            <span data-lang="ar">↑ العودة للفهرس</span>
+            <span data-lang="en">↑ Back to Index</span>
+          </a>
+        </div>
+
+        <!-- Arabic Content -->
+        <div data-lang="ar" class="space-y-6 text-slate-700 text-base sm:text-lg leading-relaxed">
+          <h3 class="text-2xl sm:text-3xl font-extrabold text-primary leading-snug">
+            طرق غلق جروح القدم السكري: الرقعة الجلدية والسديلة الموضعية
+          </h3>
+
+          <p>
+            بعد الاطمئنان على تدفق الدم وتنظيف الجرح وبناء أنسجة صحية نظيفة، تأتي المرحلة الحاسمة وهي <strong>مرحلة غلق الجرح</strong> لحماية القدم من عودة العدوى. وتوجد عدة طرق جراحية لغلق جروح القدم السكري يختار الطبيب الأنسب منها حسب مكان الجرح وحجمه:
+          </p>
+
+          <!-- Why Traditional Stitches or Leaving Open Aren't Ideal -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200 space-y-1.5">
+              <h4 class="font-bold text-primary text-base">١. الخياطة الجراحية المباشرة (نادرة الاستخدام)</h4>
+              <p class="text-sm text-slate-600">
+                نادراً ما تصلح الخياطة التقليدية بالغرز في جروح القدم السكري؛ لأن معظم هذه الجروح تكون مفتوحة وواسعة، كما أن جلد القدم لا يمتلك المرونة الكافية لتقريب حوافه دون شدٍّ يعيق التروية.
+              </p>
+            </div>
+
+            <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200 space-y-1.5">
+              <h4 class="font-bold text-primary text-base">٢. ترك الجرح ليلتئم تلقائياً</h4>
+              <p class="text-sm text-slate-600">
+                ترك الجروح الكبيرة لتمتلئ بالأنسجة وتغلق من الأطراف تلقائياً يستغرق وقتاً طويلاً ويترك <strong>ندبة كبيرة وضعيفة</strong> تمثل نقطة ضعف في القدم؛ فبمجرد الضغط عليها أثناء المشي تكون عُرضة للتشقق وفتح القرحة من جديد.
+              </p>
+            </div>
+          </div>
+
+          <!-- Split-Thickness Skin Graft -->
+          <div class="p-5 rounded-2xl bg-teal-50/70 border border-teal-200 space-y-3">
+            <h4 class="text-lg sm:text-xl font-bold text-primary">٣. الرقعة الجلدية (الحل الأكثر شيوعاً ونجاحاً)</h4>
+            <p class="text-sm sm:text-base">
+              تُغلق الغالبية العظمى من جروح القدم السكري بنجاح باستخدام <strong>الرقعة الجلدية</strong>؛ وهي طبقة رقيقة جداً من الجلد تُؤخذ من منطقة الفخذ بواسطة جهاز طبي دقيق مخصص (دون الإضرار بطبقات الجلد العميقة).
+            </p>
+            <div class="p-4 rounded-xl bg-white border border-teal-100 text-sm text-slate-700">
+              <strong>رسالة طمأنة للمرضى:</strong> يخشى بعض المرضى من أن أخذ الرقعة الجلدية سيُحدث جرحاً جديداً في الفخذ؛ والحقيقة أن مكان أخذ الرقعة لا يتعدى كونه <strong>سحجة سطحية بسيطة</strong> لا تترك ندبة، ويلتئم جلد الفخذ ويعود إلى حالته الطبيعية تماماً خلال <strong>٣ أسابيع</strong>.
+            </div>
+            <p class="text-sm sm:text-base">
+              <strong>خطوات تثبيت الرقعة:</strong> يتم عمل فتحات دقيقة في الرقعة لتصبح على هيئة شبكة تسمح بتصريف أي سوائل، ثم تُثبَّت على الجرح بالقدم إما بالغرز الجراحية الدقيقة أو باستخدام <strong>جهاز الشفط السالب (VAC)</strong>، وتستغرق من <strong>١٤ إلى ٢١ يوماً</strong> حتى تلتصق بالكامل وتغلق الجرح.
+            </p>
+          </div>
+
+          <!-- Local Flap for Heel Ulcers -->
+          <div class="p-5 rounded-2xl bg-primary/5 border-r-4 border-primary space-y-2">
+            <h4 class="text-lg sm:text-xl font-bold text-primary">٤. السديلة الموضعية (لحالات جروح الكعب)</h4>
+            <p class="text-sm sm:text-base text-slate-700">
+              في بعض المناطق التي تتحمل وزن الجسم مباشرة — وخاصة <strong>منطقة الكعب</strong> — لا يُفضَّل استخدام الرقعة الجلدية الرقيقة، بل نلجأ إلى <strong>السديلة الموضعية (أو العضلية/الحرة)</strong>؛ حيث يتم نقل طبقة جلدية سميكة وقوية من أسفل الساق لتغطية عظمة الكعب، مما يمنحها صلابة وقدرة عالية على تحمل ضغط المشي ووزن الجسم دون أن تتأثر.
+            </p>
+          </div>
+        </div>
+
+        <!-- English Summary -->
+        <div data-lang="en" class="space-y-4 text-slate-700 text-base leading-relaxed">
+          <h3 class="text-2xl font-bold text-primary">Diabetic Foot Wound Closure: Skin Grafts & Local Flaps</h3>
+          <p class="text-xs text-slate-500 font-semibold">Prof. Dr. Ahmed Mahrouky • April 23, 2020 • 2 min read</p>
+          <ul class="list-disc list-inside space-y-2">
+            <li><strong>Limitations of Primary Suturing & Secondary Intention:</strong> Direct suturing is rarely feasible due to wide defects and limited skin elasticity, while spontaneous healing leaves a fragile scar prone to recurrent ulceration under walking pressure.</li>
+            <li><strong>Split-Thickness Skin Grafting:</strong> The most common closure method. A thin meshed skin layer is harvested from the thigh (leaving only a superficial abrasion that heals completely within 3 weeks without scarring) and secured over the foot wound with sutures or negative-pressure therapy, achieving full integration in 14–21 days.</li>
+            <li><strong>Local Flaps for Heel Defects:</strong> Because the heel bears full body weight, a thicker, durable local flap rotated from the lower leg is preferred over a thin skin graft to protect the calcaneus and withstand walking pressure.</li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- Article 7: Amputation in Diabetic Foot -->
+      <article id="article-7" class="scroll-mt-24 bg-white rounded-3xl border border-slate-200 shadow-sm p-6 sm:p-10 space-y-6">
+        <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-100 pb-4">
+          <div class="flex flex-wrap items-center gap-2 text-xs font-bold">
+            <span class="px-3 py-1 rounded-full bg-teal-50 text-accent">
+              <span data-lang="ar">مقال رقم ٧</span>
+              <span data-lang="en">Article #7</span>
+            </span>
+            <span class="text-slate-500">
+              <span data-lang="ar">أ.د. أحمد المحروقي • ٢١ أبريل ٢٠٢٠ (تحديث: ٢٤ أبريل ٢٠٢٠) • دقيقتان قراءة</span>
+              <span data-lang="en">Prof. Dr. Ahmed Mahrouky • Apr 21, 2020 (Updated: Apr 24, 2020) • 2 min read</span>
+            </span>
+          </div>
+          <a href="#top" class="text-xs font-bold text-slate-500 hover:text-primary transition">
+            <span data-lang="ar">↑ العودة للفهرس</span>
+            <span data-lang="en">↑ Back to Index</span>
+          </a>
+        </div>
+
+        <!-- Arabic Content -->
+        <div data-lang="ar" class="space-y-6 text-slate-700 text-base sm:text-lg leading-relaxed">
+          <h3 class="text-2xl sm:text-3xl font-extrabold text-primary leading-snug">
+            عملية البتر في القدم السكري: متى تكون ضرورية لإنقاذ الحياة؟ وكيف يعود المريض لحياته الطبيعية؟
+          </h3>
+
+          <p>
+            تُعد عملية البتر من أكثر الأمور التي تثير قلق مرضى القدم السكري. وبالطبع فإن تخصص جراحة القدم السكري قائم بالأساس على <strong>منع البتر وتفاديه قدر المستطاع</strong> من خلال التدخل المبكر والحفاظ على أكبر قدر ممكن من أنسجة القدم. ومع ذلك، فهناك حالات طبية محددة — حتى في أكبر المراكز الطبية في أمريكا وأوروبا — يصبح فيها البتر خطوة ضرورية لإنقاذ حياة المريض.
+          </p>
+
+          <!-- Why & When Amputation is Necessary -->
+          <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200 space-y-3">
+            <h4 class="font-bold text-primary text-lg">١. متى يصبح البتر ضرورة طبية لا مفر منها؟</h4>
+            <p class="text-sm sm:text-base">
+              السبب العلمي الرئيسي للبتر هو حدوث <strong>الغرغرينا</strong> (أي موت الأنسجة وتحللها). وعندما تموت الأنسجة وتتعفن، لا يمكن للطب إعادة الحياة إليها مرة أخرى، ويصبح استئصال هذا الجزء الميت ضرورياً لمنع انتشار السموم والميكروبات إلى بقية القدم أو إلى الدورة الدموية (تسمم الدم).
+            </p>
+            <ul class="list-disc list-inside space-y-2 pr-2 text-sm sm:text-base">
+              <li><strong>البتر الجزئي المحدود:</strong> في كثير من الحالات يقتصر البتر على إصبع واحد أو عدة أصابع أو منطقة مشط القدم فقط، مع الحفاظ على باقي القدم سليمة.</li>
+              <li><strong>البتر أسفل الركبة:</strong> في الحالات المتقدمة التي تمتد فيها الغرغرينا إلى منطقة الكعب وأسفل الساق، يكون البتر من منتصف الساق (أسفل الركبة)، وهو غالباً أعلى مستوى بتر نلجأ إليه في حالات القدم السكري.</li>
+            </ul>
+          </div>
+
+          <!-- Modern Prosthetics & Return to Normal Life -->
+          <div class="p-5 rounded-2xl bg-teal-50/70 border border-teal-200 space-y-3">
+            <h4 class="font-bold text-primary text-lg">٢. الأطراف الصناعية المتطورة والعودة للحياة الطبيعية</h4>
+            <p class="text-sm sm:text-base">
+              رغم الصعوبة النفسية لقرار البتر، فإن التطور التكنولوجي الهائل في مجال <strong>الأطراف الصناعية</strong> غيّر حياة المرضى بالكامل؛ حيث تتوفر اليوم أطراف صناعية خفيفة الوزن وعالية الجودة تحاكي حركة القدم الطبيعية بدقة:
+            </p>
+            <ul class="list-disc list-inside space-y-2 pr-2 text-sm sm:text-base">
+              <li>بعد البتر أسفل الركبة، يستطيع المريض ارتداء الطرف الصناعي خلال <strong>شهر ونصف إلى شهرين فقط</strong> من العملية.</li>
+              <li>يرتدي المريض حذاءه العادي فوق الطرف الصناعي، ومع فترة تأهيل قصيرة يمشي بصورة طبيعية تماماً دون أن يلاحظ أحد أنه خضع لعملية بتر، كما يمكنه صعود السلم، والخروج، وقيادة سيارة مجهزة، والاعتماد على نفسه بالكامل.</li>
+              <li>أما في حالات بتر الأصابع أو مشط القدم، فيرتدي المريض <strong>حذاءً طبياً مجهزاً</strong> يحمي ما تبقى من القدم ويحافظ على توازنه أثناء المشي.</li>
+            </ul>
+          </div>
+
+          <!-- Crucial Medical Advice on Timing & Second Opinion -->
+          <div class="p-5 rounded-2xl bg-amber-50 border-r-4 border-amber-500 space-y-2">
+            <h4 class="font-bold text-amber-950 text-lg">٣. نصيحة ذهبية: لا تتعجل القرار، ولا تتأخر فيه إذا أجمع المختصون</h4>
+            <p class="text-sm sm:text-base text-amber-900 leading-relaxed">
+              إذا نُصحت بإجراء عملية بتر، احرص أولاً على استشارة <strong>طبيب متخصص وخبير في جراحة القدم السكري والأوعية الدموية</strong> (أو أخذ رأي أكثر من استشاري متخصص) للتأكد من استنفاد جميع فرص تسليك الشرايين وإنقاذ القدم.
+            </p>
+            <p class="text-sm sm:text-base text-amber-900 leading-relaxed">
+              أما إذا أجمع الأطباء المتخصصون على أن البتر ضروري لإنقاذ حياتك، <strong>فلا تتردد ولا تتأخر في اتخاذ القرار</strong>؛ لأن التأخير في هذه المرحلة قد يؤدي لا قدر الله إلى تسمم الدم وتهديد الحياة، أو إلى امتداد الغرغرينا وارتفاع مستوى البتر إلى <strong>أعلى الركبة</strong>، مما يصعّب استخدام الطرف الصناعي ويؤثر على قدرة المريض على الحركة مستقبلاً.
+            </p>
+          </div>
+        </div>
+
+        <!-- English Summary -->
+        <div data-lang="en" class="space-y-4 text-slate-700 text-base leading-relaxed">
+          <h3 class="text-2xl font-bold text-primary">Amputation in Diabetic Foot: When Is It Life-Saving & Modern Prosthetic Rehabilitation</h3>
+          <p class="text-xs text-slate-500 font-semibold">Prof. Dr. Ahmed Mahrouky • April 21, 2020 (Updated: Apr 24, 2020) • 2 min read</p>
+          <ul class="list-disc list-inside space-y-2">
+            <li><strong>Primary Goal & Indications:</strong> Diabetic foot surgery focuses first on limb preservation. However, when irreversible tissue necrosis (gangrene) occurs, timely removal of non-viable tissue (toe, transmetatarsal, or below-knee amputation) prevents life-threatening systemic sepsis.</li>
+            <li><strong>Modern Prosthetics & Full Mobility:</strong> Within 6–8 weeks of a below-knee amputation, patients can be fitted with lightweight, advanced prostheses worn inside regular shoes—enabling natural walking, stair climbing, driving, and full independence.</li>
+            <li><strong>Balanced Decision-Making:</strong> Always seek evaluation from an experienced vascular and diabetic foot specialist before proceeding; once specialists confirm amputation is necessary, acting promptly saves lives and preserves the knee joint for optimal prosthetic function.</li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- Article 8: Diabetic Foot Shoes & How to Choose Them -->
+      <article id="article-8" class="scroll-mt-24 bg-white rounded-3xl border border-slate-200 shadow-sm p-6 sm:p-10 space-y-6">
+        <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-100 pb-4">
+          <div class="flex flex-wrap items-center gap-2 text-xs font-bold">
+            <span class="px-3 py-1 rounded-full bg-teal-50 text-accent">
+              <span data-lang="ar">مقال رقم ٨</span>
+              <span data-lang="en">Article #8</span>
+            </span>
+            <span class="text-slate-500">
+              <span data-lang="ar">أ.د. أحمد المحروقي • ٢٣ أبريل ٢٠٢٠ • ٤ دقائق قراءة</span>
+              <span data-lang="en">Prof. Dr. Ahmed Mahrouky • Apr 23, 2020 • 4 min read</span>
+            </span>
+          </div>
+          <a href="#top" class="text-xs font-bold text-slate-500 hover:text-primary transition">
+            <span data-lang="ar">↑ العودة للفهرس</span>
+            <span data-lang="en">↑ Back to Index</span>
+          </a>
+        </div>
+
+        <!-- Arabic Content -->
+        <div data-lang="ar" class="space-y-6 text-slate-700 text-base sm:text-lg leading-relaxed">
+          <h3 class="text-2xl sm:text-3xl font-extrabold text-primary leading-snug">
+            حذاء القدم السكري وكيفية اختياره بطريقة صحيحة
+          </h3>
+
+          <p>
+            اختيار الحذاء المناسب لمريض السكري لا يقل أهمية عن الدواء؛ لأن الحذاء الضيق أو غير الملائم هو السبب المباشر لمعظم تقرحات القدم السكري. إليك الدليل الطبي الكامل لاختيار حذاء القدم السكري وقياسه واستخدامه بأمان:
+          </p>
+
+          <!-- 1. Best Time & Measuring Trick -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200 space-y-2">
+              <h4 class="font-bold text-primary text-lg">١. التوقيت الأمثل لشراء الحذاء (فترة المساء)</h4>
+              <p class="text-sm sm:text-base text-slate-600">
+                احرص دائماً على شراء الحذاء في <strong>الوقت المسائي</strong>؛ لأن القدم تتورم بشكل طبيعي بنحو نصف سنتيمتر في نهاية اليوم بعد الوقوف والمشي مقارنة بوقت الصباح، مما يضمن لك اختيار مقاس مريح لا يضغط على القدم طوال اليوم.
+              </p>
+            </div>
+
+            <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200 space-y-2">
+              <h4 class="font-bold text-primary text-lg">٢. طريقة رسم القدم بالورقة لتحديد المقاس الدقيق</h4>
+              <p class="text-sm sm:text-base text-slate-600">
+                بسبب ضعف الإحساس في القدم لدى مرضى السكري، لا يمكن الاعتماد على الشعور بالضيق أو الاتساع عند القياس. ارتدِ جواربك في المنزل، وضع قدمك على ورقة بيضاء وارسم حدودها بالقلم، ثم قِس المسافة من طرف الإصبع الأطول حتى نهاية الكعب واصطحب هذا القياس عند الشراء.
+              </p>
+            </div>
+          </div>
+
+          <!-- 2. Essential Specifications of a Diabetic Shoe -->
+          <div class="p-5 rounded-2xl bg-teal-50/70 border border-teal-200 space-y-3">
+            <h4 class="text-lg sm:text-xl font-bold text-primary">٣. المواصفات الطبية الواجب توافرها في الحذاء</h4>
+            <ul class="list-disc list-inside space-y-2.5 pr-2 text-sm sm:text-base">
+              <li><strong>مقدمة دائرية عريضة وسقف مرتفع:</strong> تجنّب تماماً الأحذية ذات المقدمة المدببة؛ يجب أن يكون وش الحذاء دائرياً وعريضاً مع ترك مسافة نحو <strong>٢ سم</strong> بين أطراف الأصابع ومقدمة الحذاء، وأن يكون سقف الحذاء مرتفعاً بحيث لا تشعر ببروز الأصابع من فوق جلد الحذاء.</li>
+              <li><strong>الرباط القابل للضبط:</strong> يُفضَّل الحذاء ذو الرباط (أو اللصق الطبي القابل للتعديل) لأنه يثبّت الحذاء فلا ينخلع من القدم دون أن يشعر المريض، كما يسمح بالتحكم في درجة اتساعه.</li>
+              <li><strong>جلد طري وخالٍ من الخياطة الداخلية:</strong> يجب أن يُصنع الحذاء من جلد طبيعي لين يأخذ شكل القدم، مع فحص الحذاء من الداخل باليد للتأكد من عدم وجود أي خياطة بارزة أو نتوءات تسبب احتكاكاً.</li>
+              <li><strong>فرشة داخلية ملساء أو من السيليكون:</strong> يجب أن تكون الفرشة ناعمة ومستوية، ويمكن إضافة <strong>فرشة طبية من السيليكون</strong> لامتصاص الصدمات وتوزيع الضغط بالتساوي.</li>
+              <li><strong>كعب ثابت ونعل صلب متوازن:</strong> يُفضَّل أن يكون الكعب منخفضاً وثابتاً والنعل متيناً لحماية القدم من الصدمات ومنع التواء الكاحل على الأسطح غير الممهدة.</li>
+              <li><strong>عدم شراء حذاء واسع أكثر من اللازم:</strong> الحذاء الواسع جداً يجعل القدم تنزلق وتحتك بداخله مما يسبب جروحاً وقرحاً.</li>
+            </ul>
+          </div>
+
+          <!-- 3. Footwear to Avoid & Socks Rule -->
+          <div class="p-5 rounded-2xl bg-red-50/70 border-r-4 border-red-600 space-y-2">
+            <h4 class="font-bold text-red-900 text-lg">٤. أحذية ممنوعة تماماً على مرضى السكري</h4>
+            <ul class="list-disc list-inside space-y-1.5 pr-2 text-sm sm:text-base text-red-900">
+              <li><strong>الكعب العالي للسيدات:</strong> يركّز وزن الجسم بالكامل على مقدمة القدم ويعرضها لقرح شديدة.</li>
+              <li><strong>الصنادل المفتوحة من الأمام:</strong> تكشف الأصابع وتعرضها للاصطدام والجروح بسهولة.</li>
+              <li><strong>الشباشب بجميع أنواعها (خاصة الشبشب ذو الإصبع):</strong> يسبب احتكاكاً شديداً بين الأصابع، كما قد ينخلع من القدم أثناء المشي أو نزول السلم دون أن يشعر المريض فيمشي حافياً.</li>
+              <li><strong>ممنوع ارتداء الحذاء بدون شراب:</strong> الجورب الطبي يوفر طبقة حماية إضافية أساسية تمنع احتكاك الجلد المباشر بالحذاء.</li>
+            </ul>
+          </div>
+
+          <!-- 4. Breaking in a New Pair Safely -->
+          <div class="p-5 rounded-2xl bg-primary/5 border-r-4 border-primary space-y-2">
+            <h4 class="font-bold text-primary text-lg">٥. قاعدة التدرج عند ارتداء حذاء جديد لأول مرة</h4>
+            <p class="text-sm sm:text-base text-slate-700">
+              عند شراء حذاء جديد، ارتدِه في المرة الأولى لمدة <strong>١٥ دقيقة فقط</strong> ثم اخلعه وافحص قدميك جيداً للتأكد من عدم وجود أي احمرار أو أثر ضغط. إذا لم تظهر أي علامات، زِد مدة الارتداء تدريجياً بحيث لا تتجاوز <strong>ساعتين يومياً</strong> في البداية حتى يلين الجلد، مع فحص القدمين يومياً لمدة أسبوع إلى عشرة أيام للتأكد من سلامتهما التامة.
+            </p>
+          </div>
+        </div>
+
+        <!-- English Summary -->
+        <div data-lang="en" class="space-y-4 text-slate-700 text-base leading-relaxed">
+          <h3 class="text-2xl font-bold text-primary">Diabetic Foot Shoes: How to Choose the Right Pair Safely</h3>
+          <p class="text-xs text-slate-500 font-semibold">Prof. Dr. Ahmed Mahrouky • April 23, 2020 • 4 min read</p>
+          <ul class="list-disc list-inside space-y-2">
+            <li><strong>Shop in the Evening & Trace Your Foot:</strong> Feet naturally swell by ~0.5 cm by evening. Because diabetic neuropathy masks tightness, trace your socked foot on paper at home and measure toe-to-heel length before shopping.</li>
+            <li><strong>Key Shoe Features:</strong> Choose a wide, rounded toe box (~2 cm clearance ahead of the toes) with a deep upper, adjustable laces, soft seamless leather interior, shock-absorbing silicone insole, and a firm, supportive sole.</li>
+            <li><strong>Footwear to Strictly Avoid:</strong> Never wear high heels, open-toed sandals, flip-flops/slippers (which easily slip off unnoticed), overly loose shoes, or any shoe without protective socks.</li>
+            <li><strong>Gradual Break-In Protocol:</strong> Wear new shoes for just 15 minutes on day one, inspect feet for redness, and limit wear to under 2 hours daily during the first 7–10 days while checking feet every evening.</li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- Article 9: Infection Control in Diabetic Foot Treatment -->
+      <article id="article-9" class="scroll-mt-24 bg-white rounded-3xl border border-slate-200 shadow-sm p-6 sm:p-10 space-y-6">
+        <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-100 pb-4">
+          <div class="flex flex-wrap items-center gap-2 text-xs font-bold">
+            <span class="px-3 py-1 rounded-full bg-teal-50 text-accent">
+              <span data-lang="ar">مقال رقم ٩</span>
+              <span data-lang="en">Article #9</span>
+            </span>
+            <span class="text-slate-500">
+              <span data-lang="ar">أ.د. أحمد المحروقي • ٢٢ أبريل ٢٠٢٠ (تحديث: ٣ أغسطس ٢٠٢٠) • ٣ دقائق قراءة</span>
+              <span data-lang="en">Prof. Dr. Ahmed Mahrouky • Apr 22, 2020 (Updated: Aug 3, 2020) • 3 min read</span>
+            </span>
+          </div>
+          <a href="#top" class="text-xs font-bold text-slate-500 hover:text-primary transition">
+            <span data-lang="ar">↑ العودة للفهرس</span>
+            <span data-lang="en">↑ Back to Index</span>
+          </a>
+        </div>
+
+        <!-- Arabic Content -->
+        <div data-lang="ar" class="space-y-6 text-slate-700 text-base sm:text-lg leading-relaxed">
+          <h3 class="text-2xl sm:text-3xl font-extrabold text-primary leading-snug">
+            مكافحة العدوى في علاج القدم السكري: مراحل التشخيص والعلاج الجراحي والتحفظي
+          </h3>
+
+          <p>
+            تُعد مشاكل القدم السكري نتيجة تداخل عاملين رئيسيين: <strong>قصور الدورة الدموية</strong> و<strong>وجود عدوى وصديد والتهابات بالقدم</strong>. وقبل البدء في علاج العدوى أو التنظيف الجراحي، هناك قاعدة طبية ذهبية لا يجوز تجاوزها:
+          </p>
+
+          <!-- Golden Rule Callout -->
+          <div class="p-5 rounded-2xl bg-primary/5 border-r-4 border-primary space-y-2">
+            <h4 class="font-bold text-primary text-lg">القاعدة الذهبية: تحسين الدورة الدموية يسبق أي تدخل جراحي</h4>
+            <p class="text-sm sm:text-base text-slate-700 leading-relaxed">
+              من أخطر الأخطاء الشائعة بدء علاج الغرغرينا أو قرح القدم جراحياً قبل التأكد من وصول دم نابض وتروية كافية للقدم؛ لأن نقص الدم يؤدي إلى تدهور سريع للحالة وارتفاع خطر البتر. لذلك يبدأ استشاري جراحة الأوعية الدموية والقدم السكري أولاً بتقييم الشرايين بالأشعة اللازمة، وتحديد خطة إعادة التروية — سواء بالأدوية الموسعة للشرايين، أو بالتسليك بالقسطرة وتركيب الدعامات، أو بالجراحة — ثم تأتي مباشرة خطوة <strong>مكافحة العدوى</strong>.
+            </p>
+          </div>
+
+          <p>
+            وتنقسم عدوى القدم السكري إلى <strong>ثلاث درجات رئيسية</strong> تختلف في خطورتها وطريقة علاجها:
+          </p>
+
+          <!-- 1. Cellulitis -->
+          <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200 space-y-2.5">
+            <h4 class="font-bold text-primary text-lg">١. الالتهاب الخلوي (الحُمرة)</h4>
+            <p class="text-sm sm:text-base">
+              هو التهاب يصيب الجلد والأنسجة الدهنية أسفل الجلد، ويظهر في صورة احمرار وسخونة وتورم وألم بالقدم، مصحوباً أحياناً بارتفاع في درجة الحرارة (قد يصل إلى ٣٨.٥ درجة أو أكثر) ورعشة وتضخم مؤلم في الغدد الليمفاوية أعلى الفخذ.
+            </p>
+            <p class="text-sm sm:text-base text-slate-700">
+              <strong>طريقة التشخيص والعلاج:</strong> يُشخَّص الالتهاب الخلوي إكلينيكياً بسهولة على يد الطبيب المتخصص دون الحاجة إلى أشعات معقدة، ويُعالج بالمضادات الحيوية الفعالة (عن طريق الفم أو الحقن العضلي أو الوريدي حسب شدة الحالة وعمر المريض والحالة العامة لوظائف الكلى والكبد).
+            </p>
+          </div>
+
+          <!-- 2. Deep Abscess -->
+          <div class="p-5 rounded-2xl bg-red-50/70 border border-red-200 space-y-2.5">
+            <h4 class="font-bold text-red-950 text-lg">٢. الخراج العميق والالتهابات الصديدية المتشعبة</h4>
+            <p class="text-sm sm:text-base text-red-900 leading-relaxed">
+              عندما يتكوّن صديد أو خلايا ميتة داخل أنسجة القدم، <strong>لا تُجدي المضادات الحيوية وحدها نفعاً</strong>؛ بل يصبح <strong>التدخل الجراحي العاجل</strong> لتفريغ الصديد وإزالة جميع الأنسجة الميتة ضرورة قصوى لإنقاذ القدم ومنع انتشار العدوى.
+            </p>
+            <p class="text-sm sm:text-base text-red-900 leading-relaxed">
+              <strong>أهمية التخصص التشريحي الدقيق:</strong> تتكون القدم من عدة غرف عضلية مغلفة بأغشية (لفافات) تمر بداخلها الشرايين والأعصاب والأوتار الدقيقة؛ لذا يجب أن تُجرى هذه الجراحة على يد جراح أوعية دموية وقدم سكري متمرس لضمان استئصال بؤرة الصديد بالكامل مع الحفاظ التام على سلامة الشرايين والأعصاب والأوتار.
+            </p>
+          </div>
+
+          <!-- 3. Osteomyelitis -->
+          <div class="p-5 rounded-2xl bg-teal-50/70 border border-teal-200 space-y-2.5">
+            <h4 class="font-bold text-primary text-lg">٣. التهاب العظام (تسوس العظام)</h4>
+            <p class="text-sm sm:text-base">
+              يُشخَّص التهاب العظام عن طريق الأشعة العادية، وفي بعض الحالات بالأشعة المقطعية أو الرنين المغناطيسي لتحديد عمق الإصابة بدقة، وينقسم إلى نوعين:
+            </p>
+            <ul class="list-disc list-inside space-y-1.5 pr-2 text-sm sm:text-base">
+              <li><strong>التهاب عظمي سطحي:</strong> يمكن علاجه في حالات محددة بالمضادات الحيوية ذات التركيز العالي والنفاذية الجيدة للعظام لفترات طويلة تحت الإشراف الطبي.</li>
+              <li><strong>التهاب عميق واصل إلى قلب العظمة:</strong> يستدعي التدخل الجراحي لإزالة الجزء الملتهب والمسوس فقط مع الحفاظ على العظام السليمة.</li>
+            </ul>
+            <div class="p-3.5 rounded-xl bg-white border border-teal-100 text-sm text-slate-700 mt-2">
+              <strong>رسالة طمأنة هامة:</strong> يظن كثير من المرضى خطأً أن تشخيص «تسوس العظام» يعني حتمية البتر؛ والحقيقة أن <strong>نسب البتر بسبب تسوس العظام قليلة جداً</strong> عند التعامل الجراحي الدقيق مع الجزء المصاب فقط.
+            </div>
+          </div>
+        </div>
+
+        <!-- English Summary -->
+        <div data-lang="en" class="space-y-4 text-slate-700 text-base leading-relaxed">
+          <h3 class="text-2xl font-bold text-primary">Infection Control in Diabetic Foot: Cellulitis, Deep Abscesses & Osteomyelitis</h3>
+          <p class="text-xs text-slate-500 font-semibold">Prof. Dr. Ahmed Mahrouky • April 22, 2020 (Updated: Aug 3, 2020) • 3 min read</p>
+          <ul class="list-disc list-inside space-y-2">
+            <li><strong>Perfusion First:</strong> Adequate arterial blood supply must always be verified and restored (via medication, angioplasty/stenting, or bypass) before any surgical debridement is performed.</li>
+            <li><strong>1. Cellulitis:</strong> Skin and subcutaneous inflammation presenting with redness, warmth, swelling, fever (&ge;38.5&deg;C), and inguinal lymphadenopathy; diagnosed clinically and treated with targeted oral or parenteral antibiotics.</li>
+            <li><strong>2. Deep Foot Abscesses:</strong> Antibiotics alone cannot resolve pus collections; urgent anatomical surgical drainage and debridement by a specialized diabetic foot surgeon are required to protect neurovascular compartments and prevent amputation.</li>
+            <li><strong>3. Osteomyelitis:</strong> Diagnosed via X-ray, CT, or MRI. Superficial bone infection may respond to prolonged bone-penetrating antibiotics, whereas deep bone involvement is treated by selective excision of infected bone—rarely requiring amputation.</li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- Article 10: Diabetic Foot Treatment via Peripheral Catheter Angioplasty -->
+      <article id="article-10" class="scroll-mt-24 bg-white rounded-3xl border border-slate-200 shadow-sm p-6 sm:p-10 space-y-6">
+        <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-100 pb-4">
+          <div class="flex flex-wrap items-center gap-2 text-xs font-bold">
+            <span class="px-3 py-1 rounded-full bg-teal-50 text-accent">
+              <span data-lang="ar">مقال رقم ١٠</span>
+              <span data-lang="en">Article #10</span>
+            </span>
+            <span class="text-slate-500">
+              <span data-lang="ar">أ.د. أحمد المحروقي • ٢٠ أبريل ٢٠٢٠ (تحديث: ٣١ يناير ٢٠٢٢) • ٥ دقائق قراءة</span>
+              <span data-lang="en">Prof. Dr. Ahmed Mahrouky • Apr 20, 2020 (Updated: Jan 31, 2022) • 5 min read</span>
+            </span>
+          </div>
+          <a href="#top" class="text-xs font-bold text-slate-500 hover:text-primary transition">
+            <span data-lang="ar">↑ العودة للفهرس</span>
+            <span data-lang="en">↑ Back to Index</span>
+          </a>
+        </div>
+
+        <!-- Arabic Content -->
+        <div data-lang="ar" class="space-y-6 text-slate-700 text-base sm:text-lg leading-relaxed">
+          <h3 class="text-2xl sm:text-3xl font-extrabold text-primary leading-snug">
+            علاج القدم السكري بتسليك الشرايين بالقسطرة التداخلية
+          </h3>
+
+          <p>
+            يرتكز علاج القدم السكري على ركيزتين أساسيتين لا غنى عنهما: <strong>الركيزة الأولى</strong> هي التأكد من وصول دم نابض وتروية كافية إلى القدم، و<strong>الركيزة الثانية</strong> هي السيطرة الكاملة على الالتهابات ومكافحة أي عدوى موجودة.
+          </p>
+
+          <!-- Step 1: Clinical & Duplex Diagnosis -->
+          <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200 space-y-3">
+            <h4 class="font-bold text-primary text-lg">١. كيف يُشخِّص الطبيب ضعف الدورة الدموية في القدم؟</h4>
+            <p class="text-sm sm:text-base">
+              يبدأ استشاري جراحة الأوعية الدموية والقدم السكري بالفحص الإكلينيكي للقدم، وتحسس النبض في <strong>شريان القدم الأمامي</strong> و<strong>شريان القدم الخلفي</strong>، والاستماع إلى صوت سريان الدم باستخدام جهاز <strong>الدوبلر اليدوي</strong>؛ فإذا كان النبض غائباً أو صوت الدوبلر منخفضاً، يطلب الطبيب إجراء <strong>الأشعة التلفزيونية بالدوبلر الملون (أشعة الدوبلكس - Duplex)</strong>.
+            </p>
+            <ul class="list-disc list-inside space-y-2 pr-2 text-sm sm:text-base">
+              <li><strong>مميزات أشعة الدوبلكس:</strong> فحص آمن تماماً وغير مؤلم، لا يتعرض فيه المريض للإشعاع أو الصبغة أو الحقن، ويعتمد في دقته على كفاءة الطبيب المختص وجهاز الموجات فوق الصوتية.</li>
+              <li><strong>ماذا يوضح الدوبلكس للجراح؟</strong> يقيس سرعة وضغط الدم من الفخذ وحتى أسفل الركبة، ويحدد نسبة الضيق (٥٠٪ أو ٧٠٪ أو ٩٠٪ أو انسداد كامل)، وطول الانسداد وسببه (جلطة حادة أو مزمنة أو تصلب شرايين)، كما يقيّم حالة الشرايين الثلاثة أسفل الركبة (القصبي الأمامي، والقصبي الخلفي، والشظوي/الأوسط)؛ علماً بأن القدم يمكن أن تحيا وتلتئم جروحها بوصول شريان واحد سليم إليها.</li>
+            </ul>
+          </div>
+
+          <!-- Step 2: Treatment Decision & Catheter Angioplasty Steps -->
+          <div class="p-5 rounded-2xl bg-teal-50/70 border border-teal-200 space-y-3">
+            <h4 class="font-bold text-primary text-lg">٢. متى نلجأ للقسطرة الطرفية؟ وكيف تتم خطوة بخطوة؟</h4>
+            <p class="text-sm sm:text-base">
+              في حالات الضيق البسيط قد تكفي الأدوية الموسعة للشرايين ومضادات التجلط. أما في حالات الضيق الشديد أو الانسداد، فتُعد <strong>القسطرة الطرفية (التوسيع بالبالون والدعامات)</strong> الخيار الأول في معظم الحالات لأنها تُجرى <strong>بدون جراحة أو غرز أو تخدير كلي</strong>، ويغادر المريض المستشفى خلال ٢٤ ساعة:
+            </p>
+            <ol class="list-decimal list-inside space-y-2 pr-2 text-sm sm:text-base">
+              <li><strong>الدخول الموضعي وتصوير الشرايين:</strong> يدخل الطبيب بإبرة دقيقة من شريان الفخذ تحت مخدر موضعي ويحقن الصبغة لتحديد خريطة الانسداد بدقة. <em>(ولمرضى القصور الكلوي الذين لا تتحمل كلاهم الصبغة العادية، نستخدم غاز <strong>ثاني أكسيد الكربون</strong> كبديل آمن تماماً يخرج مع الزفير الطبيعي من الرئة).</em></li>
+              <li><strong>عبور الانسداد والتوسيع بالبالون:</strong> يمرر الطبيب سلكاً طبياً بالغ الدقة لاختراق الجزء المسدود، ثم يُدخل فوقه بالونات علاجية (أو بالونات دوائية) ويقوم بنفخها لتوسيع مجرى الشريان، وقد يركّب دعامة معدنية عند الحاجة لضمان بقاء الشريان مفتوحاً.</li>
+              <li><strong>التأكد من عودة النبض:</strong> يُعيد الطبيب التصوير للتأكد من اندفاع الدم بقوة إلى شرايين الساق والقدم، ويتحسس عودة النبض المحسوس في القدم.</li>
+            </ol>
+          </div>
+
+          <!-- Step 3: Potential Complications & When Bypass is Preferred -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="p-5 rounded-2xl bg-amber-50/70 border border-amber-200 space-y-2">
+              <h4 class="font-bold text-amber-950 text-base sm:text-lg">٣. المضاعفات المحتملة للقسطرة (نادرة ومحدودة)</h4>
+              <ul class="list-disc list-inside space-y-1.5 pr-2 text-sm text-amber-900">
+                <li><strong>نزيف موضعي:</strong> من مكان دخول القسطرة بالفخذ، وغالباً ما يكون بسيطاً ونادراً ما يحتاج لنقل دم أو تدخل جراحي.</li>
+                <li><strong>تأثر مؤقت بوظائف الكلى:</strong> بسبب الصبغة في بعض الحالات، وغالباً ما يتحسن بالعلاج التحفظي.</li>
+                <li><strong>تجلط بالشريان:</strong> يُعالج بأدوية السيولة أو مذيبات الجلطات.</li>
+                <li><strong>عدم نجاح التسليك (أقل من ٥٪):</strong> في حالات التصلب الشديد جداً أو غياب الشرايين المستقبلة بالقدم.</li>
+              </ul>
+            </div>
+
+            <div class="p-5 rounded-2xl bg-primary/5 border border-primary/15 space-y-2">
+              <h4 class="font-bold text-primary text-base sm:text-lg">٤. متى نفضّل جراحة زرع الشريان على القسطرة؟</h4>
+              <p class="text-sm text-slate-700 leading-relaxed">
+                في حالات الانسدادات الطويلة جداً (خاصة بشريان الفخذ) عندما يحتاج المريض إلى مسار دموي مستدام لسنوات طويلة، تحقق <strong>جراحة زرع الشريان</strong> (بالوريد الطبيعي أو الصناعي) نتائج أطول عمراً من القسطرة؛ بينما تظل القسطرة والبالونات الدوائية الخيار الأمثل والأسرع لتفادي مخاطر الجراحة وإيصال الدم للقدم لالتئام القرح والغرغرينا.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- English Summary -->
+        <div data-lang="en" class="space-y-4 text-slate-700 text-base leading-relaxed">
+          <h3 class="text-2xl font-bold text-primary">Diabetic Foot Treatment via Peripheral Catheter Angioplasty</h3>
+          <p class="text-xs text-slate-500 font-semibold">Prof. Dr. Ahmed Mahrouky • April 20, 2020 (Updated: Jan 31, 2022) • 5 min read</p>
+          <ul class="list-disc list-inside space-y-2">
+            <li><strong>Vascular Assessment & Duplex Ultrasound:</strong> Evaluation begins with palpating dorsalis pedis and posterior tibial pulses and handheld Doppler, followed by radiation-free Color Duplex Ultrasound to map stenosis severity, occlusion length, and tibial runoff vessels.</li>
+            <li><strong>Minimally Invasive Angioplasty:</strong> Performed under local anesthesia via femoral access with a 24-hour hospital stay. Guidewires cross the occlusion followed by plain or drug-coated balloon inflation and selective stenting. For patients with renal impairment, <strong>CO<sub>2</sub> angiography</strong> provides a kidney-safe contrast alternative.</li>
+            <li><strong>Safety & Tailored Selection:</strong> Complication rates are low (&lt;5% technical failure in heavily calcified vessels). While long femoral occlusions may benefit from durable surgical bypass, endovascular angioplasty offers rapid, incision-free limb salvage.</li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- Article 11: Treating Foot or Toe Gangrene Without Amputation or Surgery -->
+      <article id="article-11" class="scroll-mt-24 bg-white rounded-3xl border border-slate-200 shadow-sm p-6 sm:p-10 space-y-6">
+        <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-100 pb-4">
+          <div class="flex flex-wrap items-center gap-2 text-xs font-bold">
+            <span class="px-3 py-1 rounded-full bg-teal-50 text-accent">
+              <span data-lang="ar">مقال رقم ١١</span>
+              <span data-lang="en">Article #11</span>
+            </span>
+            <span class="text-slate-500">
+              <span data-lang="ar">أ.د. أحمد المحروقي • ١٦ أبريل ٢٠٢٠ (تحديث: ٢٣ أبريل ٢٠٢٠) • دقيقة قراءة</span>
+              <span data-lang="en">Prof. Dr. Ahmed Mahrouky • Apr 16, 2020 (Updated: Apr 23, 2020) • 1 min read</span>
+            </span>
+          </div>
+          <a href="#top" class="text-xs font-bold text-slate-500 hover:text-primary transition">
+            <span data-lang="ar">↑ العودة للفهرس</span>
+            <span data-lang="en">↑ Back to Index</span>
+          </a>
+        </div>
+
+        <!-- Arabic Content -->
+        <div data-lang="ar" class="space-y-6 text-slate-700 text-base sm:text-lg leading-relaxed">
+          <h3 class="text-2xl sm:text-3xl font-extrabold text-primary leading-snug">
+            هل علاج الغرغرينا بالقدم أو الأصابع بدون بتر وبدون جراحة ممكن؟
+          </h3>
+
+          <p>
+            شهد علاج غرغرينا القدم والأصابع تطوراً طبياً كبيراً في الآونة الأخيرة، وأصبح من الممكن <strong>تفادي البتر</strong> في كثير من الحالات، بل وعلاج بعض الحالات <strong>بدون جراحة تقليدية</strong>؛ إلا أن التفرقة الدقيقة بين أنواع الغرغرينا ودرجة خطورتها هي التي تحدد خطة العلاج الآمنة للمريض.
+          </p>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <!-- When Non-Amputation / Non-Surgical Treatment is Possible -->
+            <div class="p-5 rounded-2xl bg-teal-50/70 border border-teal-200 space-y-2.5">
+              <h4 class="font-bold text-primary text-lg">١. متى يمكن علاج الغرغرينا بدون بتر؟</h4>
+              <p class="text-sm sm:text-base text-slate-700">
+                يمكن علاج بعض حالات <strong>الغرغرينا الجافة السطحية</strong> بنجاح دون بتر، وذلك بالاعتماد على منظومة متكاملة من الوسائل الطبية المجربة، تشمل:
+              </p>
+              <ul class="list-disc list-inside space-y-1.5 pr-2 text-sm sm:text-base text-slate-700">
+                <li>تسليك الشرايين بالقسطرة التداخلية لإعادة تدفق الدم.</li>
+                <li>العلاج بالأكسجين المضغوط لتحفيز التئام الأنسجة.</li>
+                <li>المضادات الحيوية الموجهة والغيارات الطبية المتخصصة.</li>
+                <li>جراحة التنظيف المحدود للقدم السكري على يد طبيب متخصص وذي خبرة.</li>
+              </ul>
+            </div>
+
+            <!-- When Amputation is Life-Saving -->
+            <div class="p-5 rounded-2xl bg-red-50/70 border border-red-200 space-y-2.5">
+              <h4 class="font-bold text-red-950 text-lg">٢. متى يكون البتر ضرورياً لإنقاذ الحياة؟</h4>
+              <p class="text-sm sm:text-base text-red-900 leading-relaxed">
+                لا يمكن القول إنه لم يعد هناك دور للبتر في علاج الغرغرينا؛ ففي حالات <strong>الغرغرينا الرطبة</strong> و<strong>الغرغرينا الغازية</strong>، أو عندما يحدث <strong>تسمم في الدم</strong> نتيجة انتشار العدوى والسموم، يصبح البتر إجراءً عاجلاً وضرورياً لإنقاذ حياة المريض.
+              </p>
+              <p class="text-sm sm:text-base text-red-900 font-semibold">
+                ويُعد التأخر في اتخاذ قرار البتر في هذه الحالات الحرجة من أهم أسباب الوفاة لا قدر الله.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- English Summary -->
+        <div data-lang="en" class="space-y-4 text-slate-700 text-base leading-relaxed">
+          <h3 class="text-2xl font-bold text-primary">Is Treating Foot or Toe Gangrene Without Amputation or Surgery Possible?</h3>
+          <p class="text-xs text-slate-500 font-semibold">Prof. Dr. Ahmed Mahrouky • April 16, 2020 (Updated: Apr 23, 2020) • 1 min read</p>
+          <p>
+            Modern vascular and diabetic foot care allows limb preservation—and even non-surgical management—in selected cases of <strong>superficial dry gangrene</strong> through endovascular catheter revascularization, hyperbaric oxygen therapy, targeted antibiotics, specialized wound dressings, and expert conservative debridement.
+          </p>
+          <p>
+            However, in <strong>wet gangrene</strong>, <strong>gas gangrene</strong>, or systemic sepsis, prompt amputation remains essential to save the patient's life, as delaying surgery in these emergencies carries a high risk of mortality.
+          </p>
+        </div>
+      </article>
+
+      <!-- Article 12: How to Choose the Right Diabetic Foot Specialist in Egypt -->
+      <article id="article-12" class="scroll-mt-24 bg-white rounded-3xl border border-slate-200 shadow-sm p-6 sm:p-10 space-y-6">
+        <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-100 pb-4">
+          <div class="flex flex-wrap items-center gap-2 text-xs font-bold">
+            <span class="px-3 py-1 rounded-full bg-teal-50 text-accent">
+              <span data-lang="ar">مقال رقم ١٢</span>
+              <span data-lang="en">Article #12</span>
+            </span>
+            <span class="text-slate-500">
+              <span data-lang="ar">أ.د. أحمد المحروقي • ١٦ أبريل ٢٠٢٠ (تحديث: ٣ أغسطس ٢٠٢٠) • دقيقتان قراءة</span>
+              <span data-lang="en">Prof. Dr. Ahmed Mahrouky • Apr 16, 2020 (Updated: Aug 3, 2020) • 2 min read</span>
+            </span>
+          </div>
+          <a href="#top" class="text-xs font-bold text-slate-500 hover:text-primary transition">
+            <span data-lang="ar">↑ العودة للفهرس</span>
+            <span data-lang="en">↑ Back to Index</span>
+          </a>
+        </div>
+
+        <!-- Arabic Content -->
+        <div data-lang="ar" class="space-y-6 text-slate-700 text-base sm:text-lg leading-relaxed">
+          <h3 class="text-2xl sm:text-3xl font-extrabold text-primary leading-snug">
+            كيف تختار أفضل دكتور قدم سكري في مصر؟ دليل المريض لتقييم الكفاءة والخبرة
+          </h3>
+
+          <p>
+            يطرح كثير من المرضى سؤالاً متكرراً: <strong>«من هو أفضل دكتور قدم سكري في مصر؟»</strong>. ومن خلال هذا المقال نضع بين يدي المريض وأسرته مجموعة من المعايير العلمية والموضوعية التي تساعدك على تقييم حالتك واختيار الطبيب الأنسب لعلاجها بأمان:
+          </p>
+
+          <!-- Q1 & Q2 -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200 space-y-2">
+              <h4 class="font-bold text-primary text-lg">أولاً: هل أحتاج إلى طبيب متخصص في القدم السكري؟</h4>
+              <p class="text-sm sm:text-base text-slate-700">
+                إذا كنت مصاباً بالسكري وتعاني من وجود <strong>جرح أو قرحة مزمنة بالقدم</strong>، أو تغير في لون الجلد أو اسوداد بالأصابع أو الكعب (غرغرينا)، أو تورم واحمرار وسخونة بالقدم، أو ألم وتنميل مستمر بالأصابع، فأنت بحاجة فعلية إلى استشارة طبيب متخصص في القدم السكري وجراحة الأوعية الدموية.
+              </p>
+            </div>
+
+            <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200 space-y-2">
+              <h4 class="font-bold text-primary text-lg">ثانياً: هل تستدعي كل الحالات درجة أستاذ جامعي؟</h4>
+              <p class="text-sm sm:text-base text-slate-700">
+                في الممارسة الطبية الحديثة حول العالم، يوجد تدرج وظيفي منظم؛ حيث يتولى الأخصائيون علاج الحالات البسيطة والمبكرة، بينما تُحوَّل <strong>الحالات المعقدة والصعبة</strong> (مثل الانسداد الشرياني المتقدم والغرغرينا والالتهابات العميقة) إلى الأستاذ المساعد أو الأستاذ الجامعي ذي الخبرة الجراحية العالية.
+              </p>
+            </div>
+          </div>
+
+          <!-- Q3 -->
+          <div class="p-5 rounded-2xl bg-amber-50/70 border-r-4 border-amber-500 space-y-2">
+            <h4 class="font-bold text-amber-950 text-lg">ثالثاً: هل أي طبيب جراحة عامة يمكنه علاج حالات القدم السكري؟</h4>
+            <p class="text-sm sm:text-base text-amber-900">
+              <strong>لا طبعاً؛</strong> فالقدم السكري تخصص دقيق تابع لجراحة الأوعية الدموية يتطلب مهارة مزدوجة في تقييم وتوسيع الشرايين الطرفية وفهم التشريح الدقيق لغرف القدم، وهي مهارات لا تتوافر لدى جميع أطباء الجراحة العامة.
+            </p>
+          </div>
+
+          <!-- Q4: 4 Criteria -->
+          <div class="p-5 rounded-2xl bg-teal-50/70 border border-teal-200 space-y-3">
+            <h4 class="font-bold text-primary text-lg">رابعاً: أربعة معايير علمية لتقييم كفاءة الطبيب</h4>
+            <ul class="list-disc list-inside space-y-2.5 pr-2 text-sm sm:text-base text-slate-700">
+              <li><strong>١. الدرجة العلمية والشهادات:</strong> الحصول على درجة الدكتوراة (M.D.) في جراحة الأوعية الدموية يثبت التأهيل العلمي الأكاديمي للتعامل مع الحالات، وتُضاف إليها الزمالات الدولية في القسطرة وجراحة الأوعية.</li>
+              <li><strong>٢. مكان ومدة التدريب الإكلينيكي:</strong> التدريب لسنوات طويلة في المستشفيات الجامعية الكبرى ذات الكثافة العالية من المرضى (مثل <strong>قصر العيني</strong> أو <strong>الدمرداش الجامعي</strong>) يمنح الطبيب خبرة عملية استثنائية معترفاً بها دولياً.</li>
+              <li><strong>٣. الخبرة التراكمية وعدد الحالات:</strong> كلما ارتقت الدرجة العلمية والخبرة العملية للطبيب (من أخصائي إلى استشاري إلى أستاذ مساعد ثم أستاذ)، زاد عدد الحالات المعقدة التي عالجها بنجاح وتحسنت نتائجه العلاجية.</li>
+              <li><strong>٤. تجارب المرضى السابقين (مع مراعاة اختلاف الحالات):</strong> سؤال المرضى السابقين مفيد، مع الانتباه إلى أن درجة صعوبة كل حالة تختلف عن الأخرى ولا يصح قياس حالة معقدة على حالة بسيطة.</li>
+            </ul>
+          </div>
+
+          <!-- Ethical Note -->
+          <div class="p-5 rounded-2xl bg-primary/5 border-r-4 border-primary space-y-2">
+            <h4 class="font-bold text-primary text-lg">كلمة أمانة واحترام للزملاء والأساتذة</h4>
+            <p class="text-sm sm:text-base text-slate-700 leading-relaxed">
+              من غير الموضوعي ولا العادل أن يدّعي أي طبيب بمفرده أنه «الأفضل مطلقاً» دون استفتاء علمي محايد أو بيان من جهة أكاديمية متخصصة؛ فالتقدير الحقيقي يأتي من التزام الطبيب بأخلاقيات المهنة، واحترامه لأساتذته وزملائه الأكفاء في التخصص، واجتهاده المستمر لتقديم أفضل رعاية طبية ممكنة لكل مريض.
+            </p>
+          </div>
+        </div>
+
+        <!-- English Summary -->
+        <div data-lang="en" class="space-y-4 text-slate-700 text-base leading-relaxed">
+          <h3 class="text-2xl font-bold text-primary">How to Choose the Right Diabetic Foot Specialist in Egypt</h3>
+          <p class="text-xs text-slate-500 font-semibold">Prof. Dr. Ahmed Mahrouky • April 16, 2020 (Updated: Aug 3, 2020) • 2 min read</p>
+          <ul class="list-disc list-inside space-y-2">
+            <li><strong>When to See a Specialist:</strong> Any diabetic patient with a non-healing foot ulcer, skin discoloration/gangrene, swelling, redness, or persistent neuropathy symptoms requires specialized vascular and diabetic foot evaluation rather than general surgery alone.</li>
+            <li><strong>Four Objective Evaluation Criteria:</strong> Assess academic qualifications (M.D. in Vascular Surgery and specialized fellowships), high-volume university hospital training (such as Kasr Al Ainy or Ain Shams University Hospitals), cumulative clinical experience (Associate Professor / Professor level for complex cases), and verified patient outcomes.</li>
+            <li><strong>Professional Ethics:</strong> Rather than making unverified self-promotional claims, true clinical excellence is reflected in peer respect, evidence-based care, and dedicated limb-salvage outcomes.</li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- Article 13: Medical-Grade Honey in Diabetic Foot Ulcers -->
+      <article id="article-13" class="scroll-mt-24 bg-white rounded-3xl border border-slate-200 shadow-sm p-6 sm:p-10 space-y-6">
+        <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-100 pb-4">
+          <div class="flex flex-wrap items-center gap-2 text-xs font-bold">
+            <span class="px-3 py-1 rounded-full bg-teal-50 text-accent">
+              <span data-lang="ar">مقال رقم ١٣</span>
+              <span data-lang="en">Article #13</span>
+            </span>
+            <span class="text-slate-500">
+              <span data-lang="ar">أ.د. أحمد المحروقي • ٣ دقائق قراءة</span>
+              <span data-lang="en">Prof. Dr. Ahmed Mahrouky • 3 min read</span>
+            </span>
+          </div>
+          <a href="#top" class="text-xs font-bold text-slate-500 hover:text-primary transition">
+            <span data-lang="ar">↑ العودة للفهرس</span>
+            <span data-lang="en">↑ Back to Index</span>
+          </a>
+        </div>
+
+        <!-- Arabic Content -->
+        <div data-lang="ar" class="space-y-6 text-slate-700 text-base sm:text-lg leading-relaxed">
+          <h3 class="text-2xl sm:text-3xl font-extrabold text-primary leading-snug">
+            علاج قرح القدم السكري بالعسل الطبي: الفوائد العلمية والضوابط الطبية
+          </h3>
+
+          <p>
+            تشير الإحصاءات العالمية إلى أنه في كل <strong>٢٠ ثانية</strong> يُفقد طرف سفلي حول العالم بسبب مضاعفات مرض السكري، مما يوضح مدى خطورة إهمال القدم السكري. ولكي نفهم الدور الحقيقي للعسل الطبي في علاج قرح القدم السكري، يجب أولاً معرفة أن نجاح العلاج يعتمد على <strong>خمس ركائز طبية متكاملة</strong> لا غنى عن أي منها:
+          </p>
+
+          <!-- 5 Pillars of Diabetic Foot Care -->
+          <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200 space-y-2.5">
+            <h4 class="font-bold text-primary text-lg">الركائز الخمس الأساسية لعلاج قرحة القدم السكري</h4>
+            <ol class="list-decimal list-inside space-y-1.5 pr-2 text-sm sm:text-base text-slate-700 font-medium">
+              <li>ضبط مستوى السكر في الدم لتعزيز مناعة الجسم وقدرته على التئام الجروح.</li>
+              <li>استعادة تدفق الدم النابض وتأمين التروية الشريانية الكافية للقدم.</li>
+              <li>العناية الموضعية السليمة بالجرح وتنظيف الأنسجة.</li>
+              <li>السيطرة على العدوى ومكافحة الميكروبات.</li>
+              <li>تخفيف وتفريغ الضغط الميكانيكي عن مكان القرحة.</li>
+            </ol>
+          </div>
+
+          <!-- How Medical Honey Works -->
+          <div class="p-5 rounded-2xl bg-teal-50/70 border border-teal-200 space-y-3">
+            <h4 class="font-bold text-primary text-lg">كيف يساعد العسل الطبي في التئام قرح القدم السكري؟</h4>
+            <p class="text-sm sm:text-base">
+              يعمل العسل كعامل مساعد ضمن العناية الموضعية بالجروح من خلال عدة آليات علمية مثبتة:
+            </p>
+            <ul class="list-disc list-inside space-y-2 pr-2 text-sm sm:text-base text-slate-700">
+              <li><strong>الحموضة الطبيعية العالية:</strong> تتراوح درجة حموضة العسل ($\text{pH}$) بين $3.2$ و $4.5$، وهي بيئة حمضية تثبط نمو وتكاثر العديد من البكتيريا المسببة للعدوى عند وضعه موضعياً، كما يحد انخفاض النشاط المائي للعسل من نمو الميكروبات.</li>
+              <li><strong>إنتاج بيروكسيد الهيدروجين والخصائص الفريدة لعسل المانوكا:</strong> يُنتج العسل الموضعي بيروكسيد الهيدروجين بتركيز لطيف ومضاد للجراثيم، بينما يتميز <strong>عسل المانوكا</strong> النيوزيلندي بنشاط قوي مضاد للبكتيريا والفطريات حتى دون الاعتماد على البيروكسيد، ولذلك يُستخدم في تصنيع المراهم والضمادات الطبية المعقمة.</li>
+              <li><strong>تنظيف الجرح وإزالة الروائح الكريهة:</strong> يساعد العسل على فصل الأنسجة الميتة عن الأنسجة السليمة بلطف (التنضير الذاتي) ويزيل الروائح الكريهة المصاحبة للقرح.</li>
+              <li><strong>تأثير مضاد للالتهابات ومضاد للأكسدة:</strong> يهدئ التهاب الجرح ويحمي الخلايا من الإجهاد التأكسدي، مما ينشط المناعة الموضعية ويسرّع معدل التئام الأنسجة.</li>
+            </ul>
+          </div>
+
+          <!-- Crucial Warnings & Limitations -->
+          <div class="p-5 rounded-2xl bg-red-50/70 border-r-4 border-red-600 space-y-2.5">
+            <h4 class="font-bold text-red-950 text-lg">ضوابط وتحذيرات هامة: متى لا يفيد العسل وحده؟</h4>
+            <p class="text-sm sm:text-base text-red-900 leading-relaxed">
+              ليست كل أنواع العسل متساوية في فعاليتها الطبية، ولا يُنصح باستخدام العسل الغذائي غير المعقم على الجروح المفتوحة؛ بل يجب استخدام المستحضرات الطبية المعقمة بعد استشارة الطبيب. والأهم من ذلك أن <strong>العسل وحده لا يعالج قرحة القدم السكري</strong> ولا يُعد بديلاً عن التدخل الجراحي أو تسليك الشرايين:
+            </p>
+            <ul class="list-disc list-inside space-y-1.5 pr-2 text-sm sm:text-base text-red-900 font-medium">
+              <li>إذا كان هناك <strong>قصور في تدفق الدم</strong> وانسداد بالشرايين، فلن يفيد العسل قبل إعادة التروية.</li>
+              <li>إذا كان <strong>سكر الدم غير منتظم</strong> ومرتفعاً باستمرار، فلن يلتئم الجرح بالعسل وحده.</li>
+              <li>إذا استمر المريض في <strong>المشي والضغط المباشر</strong> على مكان القرحة، فلن ينجح العلاج.</li>
+              <li>في حالات <strong>العدوى العميقة، أو الخراجات الصديدية، أو الأنسجة الميتة الواسعة</strong>، لا غنى عن التدخل الجراحي العاجل والمضادات الحيوية.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- English Summary -->
+        <div data-lang="en" class="space-y-4 text-slate-700 text-base leading-relaxed">
+          <h3 class="text-2xl font-bold text-primary">Medical-Grade Honey in Diabetic Foot Ulcers: Scientific Mechanisms & Clinical Limits</h3>
+          <p class="text-xs text-slate-500 font-semibold">Prof. Dr. Ahmed Mahrouky • 3 min read</p>
+          <ul class="list-disc list-inside space-y-2">
+            <li><strong>Five Pillars of Care:</strong> Worldwide, a lower limb is lost to diabetes every 20 seconds. Successful ulcer healing requires five pillars: glycemic control, restoring pulsatile arterial blood flow, local wound care, infection control, and mechanical offloading.</li>
+            <li><strong>Mechanisms of Medical-Grade Honey:</strong> Sterile medical honey (such as Manuka honey dressings) supports local wound healing via low water activity, acidity ($\text{pH } 3.2\text{--}4.5$), gentle hydrogen peroxide or non-peroxide antimicrobial activity, autolytic debridement, odor reduction, and anti-inflammatory/antioxidant effects.</li>
+            <li><strong>Clinical Limitations:</strong> Honey is strictly an adjunct—never a substitute for revascularization, glycemic control, offloading, or urgent surgical drainage in deep abscesses and extensive necrosis.</li>
+          </ul>
+        </div>
+      </article>
+
+    </div>
+
+    <!-- Bottom Appointment Card -->
+    <div class="bg-primary text-white rounded-3xl p-6 sm:p-8 flex flex-col md:flex-row items-center justify-between gap-6 shadow-md">
+      <div class="space-y-2 text-center md:text-start">
+        <h3 class="text-xl sm:text-2xl font-bold">
+          <span data-lang="ar">للحجز والاستشارة الطبية بالعيادة</span>
+          <span data-lang="en">Book a Consultation at the Clinic</span>
+        </h3>
+        <p class="text-teal-200 text-sm sm:text-base">
+          <span data-lang="ar">عيادة أ.د. أحمد المحروقي – ٤٥ شارع الدقي، الجيزة</span>
+          <span data-lang="en">Prof. Dr. Ahmed Mahrouky Clinic – 45 Dokki Street, Giza</span>
+        </p>
+      </div>
+      <div class="flex flex-wrap justify-center gap-3 shrink-0">
+        <a href="tel:+201010610504" class="bg-accent hover:bg-accent-hover text-white font-bold px-5 py-3 rounded-xl transition shadow" dir="ltr">
+          01010610504
+        </a>
+        <a href="https://wa.me/201004001219" target="_blank" rel="noopener noreferrer" class="bg-white text-primary hover:bg-slate-100 font-bold px-5 py-3 rounded-xl transition shadow">
+          <span data-lang="ar">واتساب: 01004001219</span>
+          <span data-lang="en">WhatsApp: 01004001219</span>
+        </a>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-primary-dark text-slate-300 py-8 px-4 border-t border-slate-800">
+    <div class="max-w-6xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-4 text-sm">
+      <div>
+        <span data-lang="ar">© 2026 عيادة أ.د. أحمد المحروقي – ٤٥ شارع الدقي، الجيزة.</span>
+        <span data-lang="en">© 2026 Prof. Dr. Ahmed Mahrouky Clinic – 45 Dokki Street, Giza.</span>
+      </div>
+      <div class="flex items-center gap-5">
+        <a href="tel:+201010610504" class="hover:text-white transition" dir="ltr">01010610504</a>
+        <a href="tel:+201004001219" class="hover:text-white transition" dir="ltr">01004001219</a>
+        <a href="https://www.youtube.com/@ahmed_mahrouky" target="_blank" rel="noopener noreferrer" class="hover:text-red-400 transition">YouTube</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Interactive Scripts -->
+  <script>
+    const htmlEl = document.documentElement;
+    const langToggle = document.getElementById('langToggle');
+    const langToggleMobile = document.getElementById('langToggleMobile');
+
+    function toggleLanguage() {
+      const isArabic = htmlEl.getAttribute('lang') === 'ar';
+      if (isArabic) {
+        htmlEl.setAttribute('lang', 'en');
+        htmlEl.setAttribute('dir', 'ltr');
+        langToggle.textContent = 'العربية';
+        langToggleMobile.textContent = 'العربية';
+      } else {
+        htmlEl.setAttribute('lang', 'ar');
+        htmlEl.setAttribute('dir', 'rtl');
+        langToggle.textContent = 'English';
+        langToggleMobile.textContent = 'English';
+      }
+    }
+
+    langToggle.addEventListener('click', toggleLanguage);
+    langToggleMobile.addEventListener('click', toggleLanguage);
+  </script>
+</body>
+</html>

@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>عيادة أ.د. أحمد المحروقي | جراحة الأوعية الدموية والقسطرة الطرفية والقدم السكري</title>
+  <meta name="description" content="الموقع الرسمي للأستاذ الدكتور أحمد المحروقي – أستاذ جراحة الأوعية الدموية والقسطرة الطرفية والقدم السكري بكلية الطب جامعة القاهرة (قصر العيني). ٤٥ شارع الدقي، الجيزة." />
+
+  <!-- Google Fonts: Cairo for Arabic & Inter for English -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: {
+              DEFAULT: '#0f3d5e',
+              light: '#1a5c8a',
+              dark: '#09273d',
+            },
+            accent: {
+              DEFAULT: '#0d9488',
+              hover: '#0f766e',
+            }
+          },
+          fontFamily: {
+            arabic: ['Cairo', 'sans-serif'],
+            english: ['Inter', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    html[lang="ar"] body { font-family: 'Cairo', sans-serif; }
+    html[lang="en"] body { font-family: 'Inter', sans-serif; }
+
+    html[lang="ar"] [data-lang="en"] { display: none !important; }
+    html[lang="en"] [data-lang="ar"] { display: none !important; }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-teal-600 selection:text-white">
+
+  <!-- Top Quick Contact Bar -->
+  <div class="bg-primary-dark text-slate-200 text-xs sm:text-sm py-2 px-4">
+    <div class="max-w-6xl mx-auto flex flex-wrap justify-between items-center gap-2">
+      <div class="flex items-center gap-4">
+        <a href="tel:+201010610504" class="hover:text-white transition flex items-center gap-1.5" dir="ltr">
+          <svg class="w-4 h-4 text-teal-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+          <span>01010610504</span>
+        </a>
+        <span class="text-slate-500">|</span>
+        <span class="hidden sm:inline">
+          <span data-lang="ar">٤٥ شارع الدقي – الجيزة</span>
+          <span data-lang="en">45 Dokki Street – Giza</span>
+        </span>
+      </div>
+      <div class="flex items-center gap-4">
+        <a href="https://www.facebook.com/best.diabetic.foot.doctor.in.egypt/" target="_blank" rel="noopener noreferrer" class="hover:text-blue-300 transition flex items-center gap-1.5 font-medium">
+          <svg class="w-4 h-4 text-blue-400" fill="currentColor" viewBox="0 0 24 24"><path d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.323-.593 1.323-1.325V1.325C24 .593 23.407 0 22.675 0z"/></svg>
+          <span data-lang="ar">فيسبوك</span>
+          <span data-lang="en">Facebook</span>
+        </a>
+        <span class="text-slate-600">|</span>
+        <a href="https://www.youtube.com/@ahmed_mahrouky" target="_blank" rel="noopener noreferrer" class="hover:text-red-400 transition flex items-center gap-1.5 font-medium">
+          <svg class="w-4 h-4 text-red-500" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+          <span data-lang="ar">يوتيوب</span>
+          <span data-lang="en">YouTube</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sticky Navigation Bar -->
+  <header class="bg-white/95 backdrop-blur border-b border-slate-200 sticky top-0 z-40">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-3.5 flex justify-between items-center gap-2">
+      <a href="index.html" class="flex items-center gap-3 group">
+        <div class="w-10 h-10 rounded-xl bg-primary text-white flex items-center justify-center font-bold text-lg shadow-sm group-hover:bg-primary-light transition shrink-0">
+          AM
+        </div>
+        <div>
+          <div class="font-bold text-base sm:text-lg text-primary leading-tight">
+            <span data-lang="ar">عيادة أ.د. أحمد المحروقي</span>
+            <span data-lang="en">Prof. Dr. Ahmed Mahrouky</span>
+          </div>
+          <div class="text-xs text-slate-500 font-medium hidden sm:block">
+            <span data-lang="ar">جراحة الأوعية الدموية والقدم السكري</span>
+            <span data-lang="en">Vascular & Diabetic Foot Surgery</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Desktop Menu -->
+      <nav class="hidden lg:flex items-center gap-5 text-sm font-semibold text-slate-700">
+        <a href="#about" class="hover:text-primary transition">
+          <span data-lang="ar">نبذة عن الدكتور</span>
+          <span data-lang="en">About Dr. Mahrouky</span>
+        </a>
+        <a href="#services" class="hover:text-primary transition">
+          <span data-lang="ar">التخصصات والخدمات</span>
+          <span data-lang="en">Specialties</span>
+        </a>
+        <a href="#contact" class="hover:text-primary transition">
+          <span data-lang="ar">العنوان والحجز</span>
+          <span data-lang="en">Appointments</span>
+        </a>
+        <a href="articles.html" class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-accent hover:bg-accent-hover text-white font-bold shadow-sm transition">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+          <span data-lang="ar">المقالات الطبية</span>
+          <span data-lang="en">Medical Articles</span>
+        </a>
+        <button id="langToggle" type="button" class="px-3.5 py-2 rounded-xl border border-slate-300 bg-slate-50 hover:bg-slate-100 text-primary font-bold transition cursor-pointer">
+          English
+        </button>
+      </nav>
+
+      <!-- Mobile Controls -->
+      <div class="flex items-center gap-1.5 lg:hidden">
+        <a href="articles.html" class="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg bg-accent text-white text-xs font-bold shadow-sm">
+          <span data-lang="ar">المقالات</span>
+          <span data-lang="en">Articles</span>
+        </a>
+        <button id="langToggleMobile" type="button" class="px-2.5 py-1.5 rounded-lg border border-slate-300 bg-slate-50 text-primary text-xs font-bold">
+          English
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-br from-primary-dark via-primary to-primary-light text-white py-14 sm:py-20">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+      <!-- Right/Left Column: Title & Quick Actions -->
+      <div class="lg:col-span-7 space-y-6">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 border border-white/20 text-xs sm:text-sm font-medium text-teal-200">
+          <span class="w-2 h-2 rounded-full bg-teal-400"></span>
+          <span data-lang="ar">كلية الطب – جامعة القاهرة (قصر العيني)</span>
+          <span data-lang="en">Faculty of Medicine – Cairo University (Kasr Al Ainy)</span>
+        </div>
+
+        <h1 class="text-3xl sm:text-5xl font-extrabold leading-tight">
+          <span data-lang="ar">أستاذ دكتور أحمد المحروقي</span>
+          <span data-lang="en">Prof. Dr. Ahmed Mahrouky</span>
+          <span class="block text-xl sm:text-2xl font-bold text-teal-300 mt-2">
+            <span data-lang="ar">جراحة الأوعية الدموية والقسطرة الطرفية والقدم السكري</span>
+            <span data-lang="en">Professor of Vascular, Endovascular & Diabetic Foot Surgery</span>
+          </span>
+        </h1>
+
+        <p class="text-slate-200 text-base sm:text-lg leading-relaxed max-w-2xl" data-lang="ar">
+          رعاية طبية وجراحية متكاملة لإنقاذ الأطراف وعلاج القدم السكري، وتوسيع الشرايين الطرفية بالقسطرة التداخلية، وعلاج دوالي الساقين بأحدث التقنيات.
+        </p>
+        <p class="text-slate-200 text-base sm:text-lg leading-relaxed max-w-2xl" data-lang="en">
+          Comprehensive vascular and endovascular care dedicated to limb salvage, diabetic foot ulcer management, peripheral angioplasty, and minimally invasive varicose vein treatment.
+        </p>
+
+        <!-- Primary Action Buttons -->
+        <div class="flex flex-wrap gap-3 pt-2">
+          <a href="tel:+201010610504" class="inline-flex items-center gap-2 bg-accent hover:bg-accent-hover text-white font-bold px-6 py-3.5 rounded-2xl shadow-lg transition">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+            <span data-lang="ar">اتصال بالعيادة: 01010610504</span>
+            <span data-lang="en">Call Clinic: 01010610504</span>
+          </a>
+          <a href="https://wa.me/201004001219" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-white text-primary hover:bg-slate-100 font-bold px-6 py-3.5 rounded-2xl shadow transition">
+            <span class="w-2.5 h-2.5 rounded-full bg-emerald-500"></span>
+            <span data-lang="ar">واتساب: 01004001219</span>
+            <span data-lang="en">WhatsApp: 01004001219</span>
+          </a>
+          <a href="articles.html" class="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 border border-white/25 text-white font-bold px-6 py-3.5 rounded-2xl transition">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+            <span data-lang="ar">المقالات الطبية</span>
+            <span data-lang="en">Medical Articles</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Hero Doctor Photo -->
+      <div class="lg:col-span-5">
+        <div class="bg-white/10 backdrop-blur border border-white/20 rounded-3xl overflow-hidden shadow-xl max-w-md mx-auto">
+          <div class="aspect-[4/4] bg-primary-dark overflow-hidden">
+            <img
+              id="doctorHeroPhoto"
+              src="assets/images/dr-mahrouky.jpg"
+              alt="أستاذ دكتور أحمد المحروقي"
+              class="w-full h-full object-cover object-top"
+            />
+          </div>
+          <div class="p-4 text-center bg-primary-dark/60 border-t border-white/15">
+            <p class="font-bold text-white text-base">
+              <span data-lang="ar">أ.د. أحمد المحروقي</span>
+              <span data-lang="en">Prof. Dr. Ahmed Mahrouky</span>
+            </p>
+            <p class="text-xs text-teal-200 mt-0.5">
+              <span data-lang="ar">أستاذ جراحة الأوعية الدموية والقدم السكري بقصر العيني</span>
+              <span data-lang="en">Professor of Vascular & Diabetic Foot Surgery, Kasr Al Ainy</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <main class="max-w-6xl mx-auto px-4 sm:px-6 py-12 sm:py-16 space-y-16">
+
+    <!-- About Section -->
+    <section id="about" class="scroll-mt-24 bg-white rounded-3xl border border-slate-200 shadow-sm p-6 sm:p-10 space-y-8">
+      <div class="space-y-2 border-b border-slate-200 pb-5">
+        <span class="inline-block px-3 py-1 rounded-full bg-teal-50 text-accent text-xs font-bold border border-teal-200">
+          <span data-lang="ar">الخبرة الأكاديمية والرعاية الإنسانية</span>
+          <span data-lang="en">Academic Excellence & Patient-Centered Care</span>
+        </span>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-primary">
+          <span data-lang="ar">نبذة عن الأستاذ الدكتور أحمد المحروقي</span>
+          <span data-lang="en">About Prof. Dr. Ahmed Mahrouky</span>
+        </h2>
+      </div>
+
+      <!-- Arabic About Content (Pure Arabic Only) -->
+      <div data-lang="ar" class="space-y-8 text-slate-700 leading-relaxed">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+          <div class="lg:col-span-7 space-y-4 text-base sm:text-lg">
+            <p>
+              يمتلك <strong>الدكتور أحمد المحروقي</strong> خبرة تمتد لأكثر من <strong>عشر سنوات</strong> في مجال جراحة الأوعية الدموية والقدم السكري، وأجرى خلالها أكثر من <strong>١٠٠٠ عملية جراحية وتدخل متقدم</strong> لإنقاذ مرضى القدم السكري من البتر؛ وتُعد المهارة الجراحية الدقيقة من أبرز ما يميزه وينعكس بوضوح في نسب الشفاء المرتفعة.
+            </p>
+            <p>
+              يشغل سيادته درجة <strong>أستاذ مساعد بكلية الطب</strong> — وهي قمة الهرم الأكاديمي والوظيفي للأطباء في مصر — كما يحمل <strong>شهادات وخبرات دولية</strong> في تخصص جراحة الأوعية الدموية والقسطرة الطرفية من عدة دول أجنبية.
+            </p>
+            <p>
+              يحرص الدكتور أحمد على <strong>الشرح التفصيلي للحالة للمريض وذويه</strong>، وتوضيح خطة العلاج ونسب النجاح والمضاعفات المحتملة بكل شفافية لمساعدة المريض على اتخاذ قرارات طبية مستنيرة، مما يمنح المريض شعوراً بالاطمئنان والثقة منذ الزيارة الأولى.
+            </p>
+          </div>
+
+          <div class="lg:col-span-5 bg-slate-50 p-6 rounded-2xl border border-slate-200 space-y-3 text-sm sm:text-base">
+            <h3 class="font-bold text-primary text-lg border-b border-slate-200 pb-2">لماذا يثق المرضى في عيادة أ.د. أحمد المحروقي؟</h3>
+            <ul class="space-y-2.5 font-medium">
+              <li class="flex items-start gap-2.5"><span class="text-accent font-bold">✓</span> <span><strong>أستاذ مساعد بكلية الطب:</strong> خبرة أكاديمية وجراحية رفيعة وشهادات دولية من عدة دول أجنبية.</span></li>
+              <li class="flex items-start gap-2.5"><span class="text-accent font-bold">✓</span> <span><strong>تواصل مباشر على مدار اليوم:</strong> سهولة الوصول للدكتور هاتفياً أو عبر الواتساب مع تقديم استشارات هاتفية مجانية.</span></li>
+              <li class="flex items-start gap-2.5"><span class="text-accent font-bold">✓</span> <span><strong>فريق مساعدين للرعاية المنزلية:</strong> فريق متميز لمتابعة المرضى بالمنزل تحت إشرافه المباشر، دون أن يمثلوا أي حاجز بينه وبين مرضاه.</span></li>
+              <li class="flex items-start gap-2.5"><span class="text-accent font-bold">✓</span> <span><strong>تكلفة علاجية مناسبة:</strong> سرعة الشفاء وتقديم أفضل خدمة طبية للمريض هما الأساس قبل أي اعتبار مادي.</span></li>
+              <li class="flex items-start gap-2.5"><span class="text-accent font-bold">✓</span> <span><strong>سهولة الكشف بالعيادة:</strong> لا حاجة لحجز مسبق بالهاتف؛ فقط الحضور في مواعيد العيادة وأخذ الدور مباشرة.</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 4 Highlight Pillars -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 pt-2">
+          <div class="p-4 rounded-2xl bg-teal-50/60 border border-teal-100 space-y-1.5">
+            <h4 class="font-bold text-primary text-base">حسن المعاملة والطمأنينة</h4>
+            <p class="text-sm text-slate-600">رعاية إنسانية أجمع عليها المرضى تشعرك منذ اللحظة الأولى بأنك في المكان الصحيح.</p>
+          </div>
+
+          <div class="p-4 rounded-2xl bg-teal-50/60 border border-teal-100 space-y-1.5">
+            <h4 class="font-bold text-primary text-base">متابعة دقيقة بعد العملية</h4>
+            <p class="text-sm text-slate-600">تُعد المتابعة بعد الجراحة جزءاً أساسياً من العلاج حتى يعود المريض لحياته الطبيعية بالكامل.</p>
+          </div>
+
+          <div class="p-4 rounded-2xl bg-teal-50/60 border border-teal-100 space-y-1.5">
+            <h4 class="font-bold text-primary text-base">تواصل مباشر دون حواجز</h4>
+            <p class="text-sm text-slate-600">يمكنك التواصل مع الدكتور أحمد مباشرة في أي وقت، مع متابعة منزلية من فريقه المتخصص.</p>
+          </div>
+
+          <div class="p-4 rounded-2xl bg-teal-50/60 border border-teal-100 space-y-1.5">
+            <h4 class="font-bold text-primary text-base">حجز ميسّر وتكلفة عادلة</h4>
+            <p class="text-sm text-slate-600">الحضور مباشرة في مواعيد العيادة دون تعقيد، وتكلفة علاجية تراعي مصلحة المريض وسرعة شفائه.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- English About Content (Shown only when English toggle is active) -->
+      <div data-lang="en" class="space-y-8 text-slate-700 leading-relaxed">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+          <div class="lg:col-span-7 space-y-4 text-base">
+            <p>
+              <strong>Prof. Dr. Ahmed Mahrouky</strong> brings over <strong>10 years of specialized experience</strong> in vascular and diabetic foot surgery, having performed more than <strong>1,000 limb-salvage procedures</strong> with high healing rates driven by surgical precision.
+            </p>
+            <p>
+              Serving as a <strong>Professor at the Faculty of Medicine</strong>—the pinnacle of the academic medical hierarchy in Egypt—he also holds <strong>international certifications and fellowships</strong> from several foreign medical centers.
+            </p>
+            <p>
+              Dr. Mahrouky takes time to thoroughly explain every diagnosis, treatment plan, expected success rates, and potential risks to patients and their families so they can make confident, well-informed decisions with complete peace of mind.
+            </p>
+          </div>
+
+          <div class="lg:col-span-5 bg-slate-50 p-6 rounded-2xl border border-slate-200 space-y-3 text-sm">
+            <h3 class="font-bold text-primary text-lg border-b border-slate-200 pb-2">Why Patients Trust Prof. Dr. Mahrouky</h3>
+            <ul class="space-y-2.5 font-medium">
+              <li class="flex items-start gap-2.5"><span class="text-accent font-bold">✓</span> <span><strong>Academic & International Leadership:</strong> Faculty of Medicine Professor with international training and certifications.</span></li>
+              <li class="flex items-start gap-2.5"><span class="text-accent font-bold">✓</span> <span><strong>24/7 Direct Accessibility:</strong> Easily reachable by phone or WhatsApp, offering free initial phone consultations.</span></li>
+              <li class="flex items-start gap-2.5"><span class="text-accent font-bold">✓</span> <span><strong>Dedicated Home-Care Assistants:</strong> A skilled team follows patients at home under his direct supervision without acting as a barrier between doctor and patient.</span></li>
+              <li class="flex items-start gap-2.5"><span class="text-accent font-bold">✓</span> <span><strong>Patient-First Fair Pricing:</strong> Rapid recovery and superior care always come ahead of financial gain.</span></li>
+              <li class="flex items-start gap-2.5"><span class="text-accent font-bold">✓</span> <span><strong>Hassle-Free Walk-In Visits:</strong> No prior phone booking required—simply visit during clinic hours to be seen in turn.</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Specialties & Services Section (6 Comprehensive Cards) -->
+    <section id="services" class="scroll-mt-24 space-y-8">
+      <div class="flex flex-wrap items-end justify-between gap-4">
+        <div class="space-y-2">
+          <span class="inline-block px-3 py-1 rounded-full bg-teal-50 text-accent text-xs font-bold border border-teal-200">
+            <span data-lang="ar">التخصصات والخدمات الطبية</span>
+            <span data-lang="en">Clinical Specialties</span>
+          </span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-primary">
+            <span data-lang="ar">خدمات متخصصة لإنقاذ الأطراف وعلاج الأوعية الدموية</span>
+            <span data-lang="en">Specialized Limb Salvage & Vascular Care</span>
+          </h2>
+        </div>
+        <a href="articles.html" class="text-sm font-bold text-accent hover:text-accent-hover transition">
+          <span data-lang="ar">تصفح جميع المقالات الطبية ←</span>
+          <span data-lang="en">Explore All Medical Articles →</span>
+        </a>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Specialty 1: Diabetic Foot -->
+        <div class="bg-white rounded-3xl border border-slate-200 shadow-sm p-6 flex flex-col justify-between space-y-5 hover:border-primary/40 transition">
+          <div class="space-y-3">
+            <div class="w-11 h-11 rounded-2xl bg-teal-50 text-accent flex items-center justify-center font-extrabold text-lg">٠١</div>
+            <h3 class="text-xl font-bold text-primary">
+              <span data-lang="ar">علاج القدم السكري والوقاية من البتر</span>
+              <span data-lang="en">Diabetic Foot Care & Amputation Prevention</span>
+            </h3>
+            <p class="text-sm text-slate-600 leading-relaxed">
+              <span data-lang="ar">تشخيص وعلاج قرح القدم السكري، والخراجات العميقة، والتهابات العظام، والغيار الطبي المتخصص، وتفريغ الضغط لحماية القدم من البتر.</span>
+              <span data-lang="en">Comprehensive management of diabetic foot ulcers, deep infections, osteomyelitis, specialized wound care, and pressure offloading.</span>
+            </p>
+          </div>
+          <a href="diabetic-foot.html" class="inline-flex items-center justify-between w-full px-4 py-3 rounded-xl bg-primary hover:bg-primary-light text-white text-sm font-bold transition">
+            <span data-lang="ar">تفاصيل العلاج والحالات الموثقة</span>
+            <span data-lang="en">View Details & Cases</span>
+            <span>←</span>
+          </a>
+        </div>
+
+        <!-- Specialty 2: Angioplasty & Stenting -->
+        <div class="bg-white rounded-3xl border border-slate-200 shadow-sm p-6 flex flex-col justify-between space-y-5 hover:border-primary/40 transition">
+          <div class="space-y-3">
+            <div class="w-11 h-11 rounded-2xl bg-teal-50 text-accent flex items-center justify-center font-extrabold text-lg">٠٢</div>
+            <h3 class="text-xl font-bold text-primary">
+              <span data-lang="ar">توسيع الشرايين بالقسطرة والبالون والدعامات</span>
+              <span data-lang="en">Peripheral Angioplasty, Balloon & Stenting</span>
+            </h3>
+            <p class="text-sm text-slate-600 leading-relaxed">
+              <span data-lang="ar">تسليك انسداد شرايين الساق والقدم بالقسطرة التداخلية والبالونات الدوائية والدعامات تحت مخدر موضعي لعلاج الغرغرينا وإنقاذ الطرف.</span>
+              <span data-lang="en">Minimally invasive endovascular balloon angioplasty, drug-coated balloons, and stenting under local anesthesia for gangrene and limb salvage.</span>
+            </p>
+          </div>
+          <a href="peripheral-angioplasty.html" class="inline-flex items-center justify-between w-full px-4 py-3 rounded-xl bg-primary hover:bg-primary-light text-white text-sm font-bold transition">
+            <span data-lang="ar">تفاصيل القسطرة وحالات الإنقاذ</span>
+            <span data-lang="en">View Angioplasty & Case Steps</span>
+            <span>←</span>
+          </a>
+        </div>
+
+        <!-- Specialty 3: Lower-Extremity Arterial Bypass Surgeries -->
+        <div class="bg-white rounded-3xl border border-slate-200 shadow-sm p-6 flex flex-col justify-between space-y-5 hover:border-primary/40 transition">
+          <div class="space-y-3">
+            <div class="w-11 h-11 rounded-2xl bg-teal-50 text-accent flex items-center justify-center font-extrabold text-lg">٠٣</div>
+            <h3 class="text-xl font-bold text-primary">
+              <span data-lang="ar">جراحات زرع وتوصيل الشرايين الطرفية</span>
+              <span data-lang="en">Lower-Extremity Arterial Bypass Surgeries</span>
+            </h3>
+            <p class="text-sm text-slate-600 leading-relaxed">
+              <span data-lang="ar">إجراء توصيلات شريانية دقيقة باستخدام الوريد الطبيعي أو الشرايين الصناعية لتجاوز الانسدادات الطويلة والمتكلسة وتحقيق تدفق دموي مستدام.</span>
+              <span data-lang="en">Precision surgical revascularization using autologous saphenous vein or synthetic grafts for long, heavily calcified arterial occlusions.</span>
+            </p>
+          </div>
+          <a href="articles.html#article-1" class="inline-flex items-center justify-between w-full px-4 py-3 rounded-xl bg-primary hover:bg-primary-light text-white text-sm font-bold transition">
+            <span data-lang="ar">تفاصيل جراحة زرع الشرايين</span>
+            <span data-lang="en">Read Bypass Surgery Guide</span>
+            <span>←</span>
+          </a>
+        </div>
+
+        <!-- Specialty 4: Varicose Veins Treatment Without Surgery -->
+        <div class="bg-white rounded-3xl border border-slate-200 shadow-sm p-6 flex flex-col justify-between space-y-5 hover:border-primary/40 transition">
+          <div class="space-y-3">
+            <div class="w-11 h-11 rounded-2xl bg-teal-50 text-accent flex items-center justify-center font-extrabold text-lg">٠٤</div>
+            <h3 class="text-xl font-bold text-primary">
+              <span data-lang="ar">علاج دوالي الساقين بدون جراحة</span>
+              <span data-lang="en">Varicose Veins Treatment Without Surgery</span>
+            </h3>
+            <p class="text-sm text-slate-600 leading-relaxed">
+              <span data-lang="ar">علاج الدوالي والشعيرات الدموية بأحدث تقنيات التردد الحراري والليزر والحقن الرغوي تحت مخدر موضعي والعودة للمشي في نفس اليوم دون جروح.</span>
+              <span data-lang="en">Minimally invasive endovenous thermal ablation, laser, and foam sclerotherapy under local anesthesia with immediate walking recovery.</span>
+            </p>
+          </div>
+          <a href="#contact" class="inline-flex items-center justify-between w-full px-4 py-3 rounded-xl bg-primary hover:bg-primary-light text-white text-sm font-bold transition">
+            <span data-lang="ar">حجز كشف وتقييم الدوالي</span>
+            <span data-lang="en">Book Varicose Vein Evaluation</span>
+            <span>←</span>
+          </a>
+        </div>
+
+        <!-- Specialty 5: Deep Vein Thrombosis (DVT) Treatment -->
+        <div class="bg-white rounded-3xl border border-slate-200 shadow-sm p-6 flex flex-col justify-between space-y-5 hover:border-primary/40 transition">
+          <div class="space-y-3">
+            <div class="w-11 h-11 rounded-2xl bg-teal-50 text-accent flex items-center justify-center font-extrabold text-lg">٠٥</div>
+            <h3 class="text-xl font-bold text-primary">
+              <span data-lang="ar">تشخيص وعلاج جلطات الأوردة العميقة (DVT)</span>
+              <span data-lang="en">Deep Vein Thrombosis (DVT) Treatment</span>
+            </h3>
+            <p class="text-sm text-slate-600 leading-relaxed">
+              <span data-lang="ar">التشخيص الدقيق بالدوبلكس الملون ووضع بروتوكولات إذابة الجلطات ومضادات التجلط الحديثة للوقاية من الجلطة الرئوية ومتلازمة ما بعد الجلطة.</span>
+              <span data-lang="en">Accurate Color Duplex diagnosis and evidence-based anticoagulation and thrombolytic protocols to prevent pulmonary embolism and post-thrombotic syndrome.</span>
+            </p>
+          </div>
+          <a href="#contact" class="inline-flex items-center justify-between w-full px-4 py-3 rounded-xl bg-primary hover:bg-primary-light text-white text-sm font-bold transition">
+            <span data-lang="ar">استشارة عاجلة لجلطات الأوردة</span>
+            <span data-lang="en">Schedule Urgent DVT Consultation</span>
+            <span>←</span>
+          </a>
+        </div>
+
+        <!-- Specialty 6: Medical Articles & Patient Guidance -->
+        <div class="bg-white rounded-3xl border border-slate-200 shadow-sm p-6 flex flex-col justify-between space-y-5 hover:border-primary/40 transition">
+          <div class="space-y-3">
+            <div class="w-11 h-11 rounded-2xl bg-teal-50 text-accent flex items-center justify-center font-extrabold text-lg">٠٦</div>
+            <h3 class="text-xl font-bold text-primary">
+              <span data-lang="ar">دليل المريض والمقالات الطبية الشاملة</span>
+              <span data-lang="en">Patient Guides & Medical Articles</span>
+            </h3>
+            <p class="text-sm text-slate-600 leading-relaxed">
+              <span data-lang="ar">مقالات طبية مبسطة حول الغيار المنزلي، واختيار حذاء القدم السكري، وزرع الشرايين، وعملية البتر والأطراف الصناعية.</span>
+              <span data-lang="en">Accessible medical guides on home dressing steps, diabetic footwear selection, arterial bypass, and prosthetic rehabilitation.</span>
+            </p>
+          </div>
+          <a href="articles.html" class="inline-flex items-center justify-between w-full px-4 py-3 rounded-xl bg-accent hover:bg-accent-hover text-white text-sm font-bold transition">
+            <span data-lang="ar">فتح مكتبة المقالات (١٣ مقالاً)</span>
+            <span data-lang="en">Open Articles Hub (13 Guides)</span>
+            <span>←</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Location & Contact Section -->
+    <section id="contact" class="scroll-mt-24 bg-white rounded-3xl border border-slate-200 shadow-sm p-6 sm:p-10 space-y-6">
+      <div class="space-y-2 border-b border-slate-200 pb-5">
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-primary">
+          <span data-lang="ar">العنوان وحجز المواعيد</span>
+          <span data-lang="en">Clinic Location & Appointments</span>
+        </h2>
+        <p class="text-slate-600 text-sm sm:text-base">
+          <span data-lang="ar">يسعدنا استقبالكم في مواعيد العيادة مباشرة دون الحاجة لحجز هاتفي مسبق، أو التواصل للاستشارات.</span>
+          <span data-lang="en">Walk-in visits are welcome during clinic hours without prior phone reservation, or contact us directly for inquiries.</span>
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="space-y-4">
+          <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200">
+            <div class="text-xs font-bold text-accent mb-1">
+              <span data-lang="ar">عنوان العيادة</span>
+              <span data-lang="en">Clinic Address</span>
+            </div>
+            <p class="font-bold text-primary text-base sm:text-lg">
+              <span data-lang="ar">٤٥ شارع الدقي – الجيزة، جمهورية مصر العربية</span>
+              <span data-lang="en">45 Dokki Street – Giza, Egypt</span>
+            </p>
+          </div>
+
+          <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200 space-y-2">
+            <div class="text-xs font-bold text-accent">
+              <span data-lang="ar">أرقام التواصل المباشر والاستشارات الهاتفية</span>
+              <span data-lang="en">Direct Phone & WhatsApp</span>
+            </div>
+            <div class="flex flex-wrap gap-3">
+              <a href="tel:+201010610504" class="px-4 py-2 rounded-xl bg-primary text-white font-bold text-sm hover:bg-primary-light transition" dir="ltr">
+                01010610504
+              </a>
+              <a href="https://wa.me/201004001219" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-xl bg-emerald-600 text-white font-bold text-sm hover:bg-emerald-700 transition" dir="ltr">
+                WhatsApp: 01004001219
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200 flex flex-col justify-between space-y-4">
+          <div class="space-y-2">
+            <div class="text-xs font-bold text-accent">
+              <span data-lang="ar">القنوات الرسمية على مواقع التواصل</span>
+              <span data-lang="en">Official Social & Video Channels</span>
+            </div>
+            <p class="text-sm text-slate-600">
+              <span data-lang="ar">تابعوا أحدث الفيديوهات التوعوية والحالات الموثقة عبر صفحة الفيسبوك وقناة اليوتيوب الرسمية للأستاذ الدكتور أحمد المحروقي.</span>
+              <span data-lang="en">Follow educational videos and documented clinical updates on Prof. Dr. Ahmed Mahrouky's official Facebook page and YouTube channel.</span>
+            </p>
+          </div>
+          <div class="flex flex-wrap gap-3">
+            <a href="https://www.facebook.com/best.diabetic.foot.doctor.in.egypt/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-[#1877F2] hover:bg-[#166fe5] text-white text-sm font-bold transition shadow-sm">
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.323-.593 1.323-1.325V1.325C24 .593 23.407 0 22.675 0z"/></svg>
+              <span data-lang="ar">صفحة الفيسبوك الرسمية</span>
+              <span data-lang="en">Official Facebook Page</span>
+            </a>
+            <a href="https://www.youtube.com/@ahmed_mahrouky" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-red-600 hover:bg-red-700 text-white text-sm font-bold transition shadow-sm">
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+              <span data-lang="ar">قناة اليوتيوب</span>
+              <span data-lang="en">YouTube Channel</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-primary-dark text-slate-300 py-8 px-4 border-t border-slate-800">
+    <div class="max-w-6xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-4 text-sm">
+      <div>
+        <span data-lang="ar">© 2026 عيادة أ.د. أحمد المحروقي – ٤٥ شارع الدقي، الجيزة.</span>
+        <span data-lang="en">© 2026 Prof. Dr. Ahmed Mahrouky Clinic – 45 Dokki Street, Giza.</span>
+      </div>
+      <div class="flex items-center gap-5">
+        <a href="tel:+201010610504" class="hover:text-white transition" dir="ltr">01010610504</a>
+        <a href="tel:+201004001219" class="hover:text-white transition" dir="ltr">01004001219</a>
+        <a href="https://www.facebook.com/best.diabetic.foot.doctor.in.egypt/" target="_blank" rel="noopener noreferrer" class="hover:text-blue-400 transition">Facebook</a>
+        <a href="https://www.youtube.com/@ahmed_mahrouky" target="_blank" rel="noopener noreferrer" class="hover:text-red-400 transition">YouTube</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Interactive Scripts -->
+  <script>
+    const htmlEl = document.documentElement;
+    const langToggle = document.getElementById('langToggle');
+    const langToggleMobile = document.getElementById('langToggleMobile');
+
+    function toggleLanguage() {
+      const isArabic = htmlEl.getAttribute('lang') === 'ar';
+      if (isArabic) {
+        htmlEl.setAttribute('lang', 'en');
+        htmlEl.setAttribute('dir', 'ltr');
+        langToggle.textContent = 'العربية';
+        langToggleMobile.textContent = 'العربية';
+      } else {
+        htmlEl.setAttribute('lang', 'ar');
+        htmlEl.setAttribute('dir', 'rtl');
+        langToggle.textContent = 'English';
+        langToggleMobile.textContent = 'English';
+      }
+    }
+
+    langToggle.addEventListener('click', toggleLanguage);
+    langToggleMobile.addEventListener('click', toggleLanguage);
+
+    // Auto-detect doctor photo extension (.jpg, .png, .jpeg, .avif)
+    (function loadDoctorPhoto() {
+      const img = document.getElementById('doctorHeroPhoto');
+      if (!img) return;
+      const candidates = [
+        'assets/images/dr-mahrouky.jpg',
+        'assets/images/dr-mahrouky.png',
+        'assets/images/dr-mahrouky.jpeg',
+        'assets/images/dr-mahrouky.avif'
+      ];
+      let idx = 0;
+      img.onerror = function () {
+        idx++;
+        if (idx < candidates.length) {
+          img.src = candidates[idx];
+        } else {
+          img.onerror = null;
+          img.src = 'https://placehold.co/600x600/0f3d5e/ffffff?text=Prof.+Dr.+Ahmed+Mahrouky';
+        }
+      };
+    })();
+  </script>
+</body>
+</html>
